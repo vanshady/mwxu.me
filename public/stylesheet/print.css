@@ -1,0 +1,10 @@
+@media only print {
+	body * { font-size: 12px !important; color: black !important; }
+	nav[role='navigation'] { display: none; }
+	article h1 { font-size: 2em !important; }
+	header, footer, p, blockquote, article h1, article h2, article h3 { max-width: 28rem !important; margin-left: auto; margin-right: auto; }
+	body.article header h1 { width: 100%; padding-left: 0;}
+	body.article header { padding-left: 0; }
+	body.article footer { padding-left: 0; }
+	body.article section { display: none; }
+}

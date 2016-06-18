@@ -1,0 +1,135 @@
+{
+  "2016": [
+    {
+      "label": "Jupyter-Autosklearn",
+      "code": "https://github.com/vanshady/jupyter-sklearn",
+      "desc": [
+        "This is a realtime app developed by Jupyter Notebook, socket.io, React. It can take training data and select the approriate model automatically.",
+      ],
+      "month": "May",
+    },
+    {
+      "label": "CrunchBase Analysis",
+      "code": "https://github.com/vanshady/crunchbase_analysis",
+      "desc": [
+        "This is a graphql server developed by MySQL, sequelize, and GraphQL.",
+      ],
+      "month": "May",
+    },
+    {
+      "label": "Realtime Chat Application",
+      "link": "http://chat.mwxu.me",
+      "img": "/img/chat.png",
+      "desc": [
+        "This is a realtime chat app developed by express, socket.io, React, Bootstrap, and MongoDB."
+      ],
+      "month": "May",
+    },
+    {
+      "label": "SiliconHacks",
+      "link": "http://www.siliconhacks.com",
+      "code": "https://github.com/vanshady/siliconhacks/",
+      "img": "/img/silicon.png",
+      "desc": [
+        "The website for SiliconHacks: siliconhacks.com. Developed by Node.js, React, and Bootstrap."
+      ],
+      "month": "Apr",
+    },
+    {
+      "label": "Zhihu Personal Search Engine",
+      "link": "http://zhihu.grapeot.me/",
+      "img": "/img/zhihu.png",
+      "desc": [
+        "This website scrapes the answers of users on the Q&A website, Zhihu知乎."
+      ],
+      "month": "Apr",
+    },
+    {
+      "label": "Smiley Face Force Layout with D3",
+      "link": "http://smiley.mwxu.me",
+      "code": "https://github.com/vanshady/smiley/",
+      "desc": [
+        "A little demo for fun"
+      ],
+      "month": "Feb",
+    },
+    {
+      "label": "Eventbrite Data Visualization",
+      "link": "https://eventbrite-data-vis.herokuapp.com/",
+      "code": "https://github.com/vanshady/Eventbrite-Data-Vis/",
+      "img": "/img/GMapFull.png",
+      "desc": [
+        "This application consists of four type of visualization of Eventbrite Data using Eventbrite API, Python, D3.js, jquery, Google Map API."
+      ],
+      "month": "Jan",
+    },
+    {
+      "label": "React Calculator",
+      "link": "http://calculator.mwxu.me",
+      "code": "https://github.com/vanshady/react-calculator/",
+      "img": "/img/calculator.png",
+      "desc": [
+        "This calculator is built by React, bootstrap, and bootstrap-material-design."
+      ],
+      "month": "Jan",
+    },
+    {
+      "label": "Angle to Direction NPM Package",
+      "link": "https://www.npmjs.com/package/angle-to-direction/",
+      "desc": [
+        "This npm package can convert angle to direction.",
+        "1435 downloads in all."
+      ],
+      "month": "Jan",
+    },
+  ],
+  "2015": [
+    {
+      "label": "Neuroscience Data Visualisation",
+      "link": "http://roi.mwxu.me",
+      "desc": [
+        "A research project conducted at UC Davis",
+        "We used D3.js to visualize the relationship between different regions of interests in a brain"
+      ],
+      "month": "Oct",
+    },
+    {
+      "label": "SpeechHacks",
+      "link": "https://speechhacks.herokuapp.com/",
+      "img": "/img/speechhacks-screenshot.png",
+      "desc": [
+        "A speech improvement website. HackingEDU prizewinning product."
+      ],
+      "month": "Oct",
+    },
+    {
+      "label": "An Elastic Ball Made by D3.js",
+      "link": "http://ball.mwxu.me",
+      "desc": [
+        "<iframe src='http://ball.mwxu.me' frameBorder=0 marginwidth=0 marginheight=0 scrolling=no style='width:550px;height:300px;' width=550 height=300 ALLOWTRANSPARENCY='true'></iframe>",
+        "An Elastic Ball Made by D3.js"
+      ],
+      "month": "Oct",
+    },
+    {
+      "label": "Data Visualisation of Wine",
+      "link": "http://wine.mwxu.me",
+      "code": "https://github.com/vanshady/wine/",
+      "img": "/img/wine-screenshot.png",
+      "desc": [
+        ""
+      ],
+      "month": "Aug",
+    },
+    {
+      "label": "Data Visualisation of Hotel",
+      "link": "http://hotel.mwxu.me",
+      "code": "https://github.com/vanshady/wine/",
+      "img": "/img/wine-screenshot.png",
+      "desc": [
+        ""
+      ],
+      "month": "Aug",
+    },
+  ],
+};
