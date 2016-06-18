@@ -4,6 +4,9 @@ const IndexSection = require('./indexsection.jsx');
 const projects = require('./portfolio.json');
 
 const Project = React.createClass({
+  componentDidUpdate() {
+    window.scrollTo(0, 0);
+  },
   render() {
     let key = 0;
     const year = this.props.params.name.slice(0, 4);

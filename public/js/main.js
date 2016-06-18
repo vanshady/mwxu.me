@@ -25070,6 +25070,9 @@ var projects = require('./portfolio.json');
 
 var Project = React.createClass({
   displayName: 'Project',
+  componentDidUpdate: function componentDidUpdate() {
+    window.scrollTo(0, 0);
+  },
   render: function render() {
     var key = 0;
     var year = this.props.params.name.slice(0, 4);
