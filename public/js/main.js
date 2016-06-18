@@ -24387,9 +24387,7 @@ var IndexText = require('./components/indextext.jsx');
 var IndexSection = require('./components/indexsection.jsx');
 var Project = require('./components/project.jsx');
 // const About = require('./components/about.jsx');
-// const Contact = require('./components/contact.jsx');
 // <Route path="/about" component={About} />
-// <Route path="/contact" component={Contact} />
 
 var Index = React.createClass({
   displayName: 'Index',
@@ -24470,21 +24468,37 @@ var Base = React.createClass({
                   { href: "/Minwei_Xu_Resume.pdf", download: true },
                   "Resume"
                 )
-              ),
-              React.createElement(
-                "li",
-                null,
-                React.createElement(
-                  "a",
-                  { href: "/contact" },
-                  "Contact"
-                )
               )
             )
           )
         )
       ),
-      this.props.children
+      this.props.children,
+      React.createElement(
+        "footer",
+        null,
+        React.createElement(
+          "em",
+          null,
+          React.createElement(
+            "a",
+            { href: "https://www.linkedin.com/in/minweixu" },
+            "Linkedin"
+          ),
+          "&nbsp · &nbsp",
+          React.createElement(
+            "a",
+            { href: "https://www.facebook.com/william.hsu.182" },
+            "Facebook"
+          ),
+          "&nbsp · &nbsp",
+          React.createElement(
+            "a",
+            { href: "https://www.github.com/vanshady" },
+            "Github"
+          )
+        )
+      )
     );
   }
 });
@@ -24854,7 +24868,7 @@ var projects = require('./portfolio.json');
 var Project = React.createClass({
   displayName: 'Project',
   componentDidUpdate: function componentDidUpdate() {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   },
   render: function render() {
     var key = 0;

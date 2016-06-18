@@ -16,9 +16,7 @@ const IndexText = require('./components/indextext.jsx');
 const IndexSection = require('./components/indexsection.jsx');
 const Project = require('./components/project.jsx');
 // const About = require('./components/about.jsx');
-// const Contact = require('./components/contact.jsx');
 // <Route path="/about" component={About} />
-// <Route path="/contact" component={Contact} />
 
 const Index = React.createClass({
   render() {
