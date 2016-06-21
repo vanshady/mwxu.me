@@ -1,7 +1,7 @@
 {
-  "name": "siliconhacks",
+  "name": "mwxu.me",
   "version": "1.0.0",
-  "description": "SiliconHacks website. Written in HTML, CSS, Node.js, express, and React.",
+  "description": "Minwei Xu's personal website.",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",

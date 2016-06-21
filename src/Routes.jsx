@@ -12,28 +12,16 @@ const IndexRoute = ReactRouter.IndexRoute;
 import { browserHistory } from 'react-router';
 
 const Base = require('./components/base.jsx');
-const IndexText = require('./components/indextext.jsx');
-const IndexSection = require('./components/indexsection.jsx');
+const Index = require('./components/index.jsx');
 const Project = require('./components/project.jsx');
-// const About = require('./components/about.jsx');
-// <Route path="/about" component={About} />
-
-const Index = React.createClass({
-  render() {
-    return (
-      <div>
-        <IndexText />
-        <IndexSection />
-      </div>
-    );
-  },
-});
+const About = require('./components/about.jsx');
 
 const Routes = (
   <Router history={browserHistory}>
     <Route path="/" component={Base} >
       <IndexRoute component={Index} />
       <Route path="/project/:name" component={Project} />
+      <Route path="/about" component={About} />
     </Route>
   </Router>
 );

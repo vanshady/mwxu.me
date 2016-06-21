@@ -4,6 +4,10 @@ const IndexSection = require('./indexsection.jsx');
 const projects = require('./portfolio.json');
 
 const Project = React.createClass({
+  componentDidMount() {
+    document.getElementById('homeTab').className = '';
+    document.getElementById('aboutTab').className = '';
+  },
   componentDidUpdate() {
     // window.scrollTo(0, 0);
   },

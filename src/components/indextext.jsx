@@ -10,6 +10,9 @@ const IndexText = React.createClass({
           I’m Minwei Xu 徐旻威, a full-stack developer
           <br />
           and a sophomore at JHU.
+          <br />
+          <a href="https://www.linkedin.com/in/minweixu">Linkedin</a>&nbsp; · &nbsp;
+          <a href="https://www.github.com/vanshady">Github</a>
         </p>
       </section>
     );

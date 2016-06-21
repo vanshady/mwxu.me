@@ -6,13 +6,13 @@ const Base = React.createClass({
       <div>
         <header>
           <div className="navwrapper">
-            <a href="http://mwxu.me/" className="name">
+            <a href="/" className="name">
               Minwei Xu
             </a>
             <nav role="navigation">
               <ul>
-                <li><a href="/" className="active">Home</a></li>
-                <li><a href="/about">About Me</a></li>
+                <li><a href="/" id="homeTab">Home</a></li>
+                <li><a href="/about" id="aboutTab">About Me</a></li>
                 <li><a href="/Minwei_Xu_Resume.pdf" download>Resume</a></li>
               </ul>
             </nav>
@@ -21,8 +21,8 @@ const Base = React.createClass({
         {this.props.children}
         <footer>
           <em>
-            <a href="https://www.linkedin.com/in/minweixu">Linkedin</a>&nbsp · &nbsp
-            <a href="https://www.facebook.com/william.hsu.182">Facebook</a>&nbsp · &nbsp
+            <a href="https://www.linkedin.com/in/minweixu">Linkedin</a>&nbsp; · &nbsp;
+            <a href="https://www.facebook.com/william.hsu.182">Facebook</a>&nbsp; · &nbsp;
             <a href="https://www.github.com/vanshady">Github</a>
           </em>
         </footer>

@@ -24383,23 +24383,9 @@ var IndexRoute = ReactRouter.IndexRoute;
 
 
 var Base = require('./components/base.jsx');
-var IndexText = require('./components/indextext.jsx');
-var IndexSection = require('./components/indexsection.jsx');
+var Index = require('./components/index.jsx');
 var Project = require('./components/project.jsx');
-// const About = require('./components/about.jsx');
-// <Route path="/about" component={About} />
-
-var Index = React.createClass({
-  displayName: 'Index',
-  render: function render() {
-    return React.createElement(
-      'div',
-      null,
-      React.createElement(IndexText, null),
-      React.createElement(IndexSection, null)
-    );
-  }
-});
+var About = require('./components/about.jsx');
 
 var Routes = React.createElement(
   Router,
@@ -24408,13 +24394,45 @@ var Routes = React.createElement(
     Route,
     { path: '/', component: Base },
     React.createElement(IndexRoute, { component: Index }),
-    React.createElement(Route, { path: '/project/:name', component: Project })
+    React.createElement(Route, { path: '/project/:name', component: Project }),
+    React.createElement(Route, { path: '/about', component: About })
   )
 );
 
 module.exports = Routes;
 
-},{"./components/base.jsx":221,"./components/indexsection.jsx":222,"./components/indextext.jsx":223,"./components/project.jsx":226,"react":217,"react-router":81}],221:[function(require,module,exports){
+},{"./components/about.jsx":221,"./components/base.jsx":222,"./components/index.jsx":223,"./components/project.jsx":228,"react":217,"react-router":81}],221:[function(require,module,exports){
+'use strict';
+
+var React = require('react');
+
+var About = React.createClass({
+  displayName: 'About',
+  componentDidMount: function componentDidMount() {
+    document.getElementById('homeTab').className = '';
+    document.getElementById('aboutTab').className = 'active';
+  },
+  render: function render() {
+    return React.createElement(
+      'div',
+      null,
+      React.createElement(
+        'article',
+        null,
+        React.createElement(
+          'h1',
+          null,
+          name
+        ),
+        React.createElement('div', { className: 'body' })
+      )
+    );
+  }
+});
+
+module.exports = About;
+
+},{"react":217}],222:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -24433,7 +24451,7 @@ var Base = React.createClass({
           { className: "navwrapper" },
           React.createElement(
             "a",
-            { href: "http://mwxu.me/", className: "name" },
+            { href: "/", className: "name" },
             "Minwei Xu"
           ),
           React.createElement(
@@ -24447,7 +24465,7 @@ var Base = React.createClass({
                 null,
                 React.createElement(
                   "a",
-                  { href: "/", className: "active" },
+                  { href: "/", id: "homeTab" },
                   "Home"
                 )
               ),
@@ -24456,7 +24474,7 @@ var Base = React.createClass({
                 null,
                 React.createElement(
                   "a",
-                  { href: "/about" },
+                  { href: "/about", id: "aboutTab" },
                   "About Me"
                 )
               ),
@@ -24485,13 +24503,13 @@ var Base = React.createClass({
             { href: "https://www.linkedin.com/in/minweixu" },
             "Linkedin"
           ),
-          "&nbsp · &nbsp",
+          "  ·  ",
           React.createElement(
             "a",
             { href: "https://www.facebook.com/william.hsu.182" },
             "Facebook"
           ),
-          "&nbsp · &nbsp",
+          "  ·  ",
           React.createElement(
             "a",
             { href: "https://www.github.com/vanshady" },
@@ -24505,7 +24523,32 @@ var Base = React.createClass({
 
 module.exports = Base;
 
-},{"react":217}],222:[function(require,module,exports){
+},{"react":217}],223:[function(require,module,exports){
+'use strict';
+
+var React = require('react');
+var IndexSection = require('./indexsection.jsx');
+var IndexText = require('./indextext.jsx');
+
+var Index = React.createClass({
+  displayName: 'Index',
+  componentDidMount: function componentDidMount() {
+    document.getElementById('homeTab').className = 'active';
+    document.getElementById('aboutTab').className = '';
+  },
+  render: function render() {
+    return React.createElement(
+      'div',
+      null,
+      React.createElement(IndexText, null),
+      React.createElement(IndexSection, null)
+    );
+  }
+});
+
+module.exports = Index;
+
+},{"./indexsection.jsx":224,"./indextext.jsx":225,"react":217}],224:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
@@ -24628,7 +24671,7 @@ var IndexSection = React.createClass({
 
 module.exports = IndexSection;
 
-},{"./item.jsx":224,"./portfolio.json":225,"react":217}],223:[function(require,module,exports){
+},{"./item.jsx":226,"./portfolio.json":227,"react":217}],225:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
@@ -24652,7 +24695,19 @@ var IndexText = React.createClass({
         { className: 'intro' },
         'I’m Minwei Xu 徐旻威, a full-stack developer',
         React.createElement('br', null),
-        'and a sophomore at JHU.'
+        'and a sophomore at JHU.',
+        React.createElement('br', null),
+        React.createElement(
+          'a',
+          { href: 'https://www.linkedin.com/in/minweixu' },
+          'Linkedin'
+        ),
+        '  ·  ',
+        React.createElement(
+          'a',
+          { href: 'https://www.github.com/vanshady' },
+          'Github'
+        )
       )
     );
   }
@@ -24660,7 +24715,7 @@ var IndexText = React.createClass({
 
 module.exports = IndexText;
 
-},{"./indexsection.jsx":222,"react":217}],224:[function(require,module,exports){
+},{"./indexsection.jsx":224,"react":217}],226:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -24720,7 +24775,7 @@ var Item = React.createClass({
 
 module.exports = Item;
 
-},{"react":217}],225:[function(require,module,exports){
+},{"react":217}],227:[function(require,module,exports){
 module.exports={
   "2016": [
     {
@@ -24857,7 +24912,7 @@ module.exports={
   ],
 };
 
-},{}],226:[function(require,module,exports){
+},{}],228:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
@@ -24867,6 +24922,10 @@ var projects = require('./portfolio.json');
 
 var Project = React.createClass({
   displayName: 'Project',
+  componentDidMount: function componentDidMount() {
+    document.getElementById('homeTab').className = '';
+    document.getElementById('aboutTab').className = '';
+  },
   componentDidUpdate: function componentDidUpdate() {
     // window.scrollTo(0, 0);
   },
@@ -24951,7 +25010,7 @@ var Project = React.createClass({
 
 module.exports = Project;
 
-},{"./indexsection.jsx":222,"./portfolio.json":225,"react":217}],227:[function(require,module,exports){
+},{"./indexsection.jsx":224,"./portfolio.json":227,"react":217}],229:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
@@ -24960,4 +25019,4 @@ var ReactDOM = require('react-dom');
 var Routes = require('./Routes.jsx');
 ReactDOM.render(Routes, document.getElementById('main'));
 
-},{"./Routes.jsx":220,"react":217,"react-dom":51}]},{},[227]);
+},{"./Routes.jsx":220,"react":217,"react-dom":51}]},{},[229]);
