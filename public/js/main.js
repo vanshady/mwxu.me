@@ -24405,7 +24405,7 @@ module.exports = Routes;
 'use strict';
 
 var React = require('react');
-
+var IndexText = require('./indextext.jsx');
 var About = React.createClass({
   displayName: 'About',
   componentDidMount: function componentDidMount() {
@@ -24416,15 +24416,15 @@ var About = React.createClass({
     return React.createElement(
       'div',
       null,
+      React.createElement(IndexText, null),
       React.createElement(
-        'article',
-        null,
+        'section',
+        { className: 'text' },
         React.createElement(
-          'h1',
+          'p',
           null,
-          name
-        ),
-        React.createElement('div', { className: 'body' })
+          'Will be updated soon.'
+        )
       )
     );
   }
@@ -24432,7 +24432,7 @@ var About = React.createClass({
 
 module.exports = About;
 
-},{"react":217}],222:[function(require,module,exports){
+},{"./indextext.jsx":225,"react":217}],222:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -24475,7 +24475,7 @@ var Base = React.createClass({
                 React.createElement(
                   "a",
                   { href: "/about", id: "aboutTab" },
-                  "About Me"
+                  "About"
                 )
               ),
               React.createElement(
@@ -24585,7 +24585,7 @@ var IndexSection = React.createClass({
               null,
               React.createElement(
                 'a',
-                { href: 'http://chat.mwxu.me' },
+                { href: '/project/2016-Realtime Chat Application' },
                 React.createElement('img', { src: '/img/chat.png', className: 'fullimg' }),
                 React.createElement(
                   'b',
@@ -24604,7 +24604,7 @@ var IndexSection = React.createClass({
               null,
               React.createElement(
                 'a',
-                { href: 'http://www.siliconhacks.com' },
+                { href: '/project/2016-SiliconHacks' },
                 React.createElement('img', { src: '/img/silicon.png', className: 'fullimg' }),
                 React.createElement(
                   'b',
@@ -24623,7 +24623,7 @@ var IndexSection = React.createClass({
               null,
               React.createElement(
                 'a',
-                { href: 'https://eventbrite-data-vis.herokuapp.com/' },
+                { href: '/project/2016-Eventbrite Data Visualization' },
                 React.createElement('img', { src: '/img/GMapFull.png', className: 'fullimg' }),
                 React.createElement(
                   'b',
@@ -24642,7 +24642,7 @@ var IndexSection = React.createClass({
               null,
               React.createElement(
                 'a',
-                { href: 'hhttp://calculator.mwxu.me' },
+                { href: '/project/2016-React Calculator' },
                 React.createElement('img', { src: '/img/calculator.png', className: 'fullimg' }),
                 React.createElement(
                   'b',
@@ -24672,41 +24672,40 @@ var IndexSection = React.createClass({
 module.exports = IndexSection;
 
 },{"./item.jsx":226,"./portfolio.json":227,"react":217}],225:[function(require,module,exports){
-'use strict';
+"use strict";
 
 var React = require('react');
-var IndexSection = require('./indexsection.jsx');
 
 var IndexText = React.createClass({
-  displayName: 'IndexText',
+  displayName: "IndexText",
   render: function render() {
     return React.createElement(
-      'section',
-      { className: 'text' },
+      "section",
+      { className: "text" },
       React.createElement(
-        'p',
+        "p",
         null,
-        ' ',
-        React.createElement('img', { src: '/img/avatar.jpg', alt: 'avatar', className: 'fullimg avatar' }),
-        ' '
+        " ",
+        React.createElement("img", { src: "/img/avatar.jpg", alt: "avatar", className: "fullimg avatar" }),
+        " "
       ),
       React.createElement(
-        'p',
-        { className: 'intro' },
-        'I’m Minwei Xu 徐旻威, a full-stack developer',
-        React.createElement('br', null),
-        'and a sophomore at JHU.',
-        React.createElement('br', null),
+        "p",
+        { className: "intro" },
+        "I’m Minwei Xu 徐旻威, a full-stack developer",
+        React.createElement("br", null),
+        "and a sophomore at JHU.",
+        React.createElement("br", null),
         React.createElement(
-          'a',
-          { href: 'https://www.linkedin.com/in/minweixu' },
-          'Linkedin'
+          "a",
+          { href: "https://www.linkedin.com/in/minweixu" },
+          "Linkedin"
         ),
-        '  ·  ',
+        "  ·  ",
         React.createElement(
-          'a',
-          { href: 'https://www.github.com/vanshady' },
-          'Github'
+          "a",
+          { href: "https://www.github.com/vanshady" },
+          "Github"
         )
       )
     );
@@ -24715,7 +24714,7 @@ var IndexText = React.createClass({
 
 module.exports = IndexText;
 
-},{"./indexsection.jsx":224,"react":217}],226:[function(require,module,exports){
+},{"react":217}],226:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -24939,6 +24938,19 @@ var Project = React.createClass({
     var time = project.month + ' ' + year;
     var image = function image() {
       if (project.img) {
+        if (project.link) {
+          return React.createElement(
+            'a',
+            { href: project.link },
+            React.createElement('img', { src: project.img, alt: name, className: 'fullimg' })
+          );
+        } else if (project.code) {
+          return React.createElement(
+            'a',
+            { href: project.code },
+            React.createElement('img', { src: project.img, alt: name, className: 'fullimg' })
+          );
+        }
         return React.createElement('img', { src: project.img, alt: name, className: 'fullimg' });
       }
     };

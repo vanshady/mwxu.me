@@ -1,5 +1,4 @@
 const React = require('react');
-const IndexSection = require('./indexsection.jsx');
 
 const IndexText = React.createClass({
   render() {

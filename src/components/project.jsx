@@ -21,6 +21,12 @@ const Project = React.createClass({
     const time = `${project.month} ${year}`;
     const image = () => {
       if (project.img) {
+        if (project.link) {
+          return (<a href={project.link}><img src={project.img} alt={name} className="fullimg" /></a>);
+        }
+        else if (project.code) {
+          return (<a href={project.code}><img src={project.img} alt={name} className="fullimg" /></a>);
+        }
         return (
           <img src={project.img} alt={name} className="fullimg" />
         );

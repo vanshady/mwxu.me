@@ -14,28 +14,28 @@ const IndexSection = React.createClass({
             </aside>
             <div className="grid">
               <div>
-                <a href="http://chat.mwxu.me">
+                <a href="/project/2016-Realtime Chat Application">
                   <img src="/img/chat.png" className="fullimg" />
                   <b className="label">Realtime Chat Application</b>
                   <em className="detail">2016</em>
                 </a>
               </div>
               <div>
-                <a href="http://www.siliconhacks.com">
+                <a href="/project/2016-SiliconHacks">
                   <img src="/img/silicon.png" className="fullimg" />
                   <b className="label">SiliconHacks</b>
                   <em className="detail">2016</em>
                 </a>
               </div>
               <div>
-                <a href="https://eventbrite-data-vis.herokuapp.com/">
+                <a href="/project/2016-Eventbrite Data Visualization">
                   <img src="/img/GMapFull.png" className="fullimg" />
                   <b className="label">Eventbrite Data Visualization</b>
                   <em className="detail">2016</em>
                 </a>
               </div>
               <div>
-                <a href="hhttp://calculator.mwxu.me">
+                <a href="/project/2016-React Calculator">
                   <img src="/img/calculator.png" className="fullimg" />
                   <b className="label">React Calculator</b>
                   <em className="detail">2016</em>

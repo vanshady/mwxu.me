@@ -1,5 +1,5 @@
 const React = require('react');
-
+const IndexText = require('./indextext.jsx');
 const About = React.createClass({
   componentDidMount() {
     document.getElementById('homeTab').className = '';
@@ -8,11 +8,12 @@ const About = React.createClass({
   render() {
     return (
       <div>
-        <article>
-          <h1>{name}</h1>
-          <div className="body">
-          </div>
-        </article>
+        <IndexText />
+        <section className="text">
+          <p>
+            Will be updated soon.
+          </p>
+        </section>
       </div>
     );
   },
