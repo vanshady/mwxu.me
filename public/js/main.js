@@ -24935,7 +24935,7 @@ module.exports={
     },
     {
       "label": "SiliconHacks",
-      "link": "http://www.siliconhacks.com",
+      "link": "http://siliconhacks.com",
       "code": "https://github.com/vanshady/siliconhacks/",
       "img": "/img/silicon.png",
       "desc": [
