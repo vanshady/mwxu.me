@@ -24406,6 +24406,7 @@ module.exports = Routes;
 
 var React = require('react');
 var IndexText = require('./indextext.jsx');
+
 var About = React.createClass({
   displayName: 'About',
   componentDidMount: function componentDidMount() {
@@ -24416,14 +24417,138 @@ var About = React.createClass({
     return React.createElement(
       'div',
       null,
-      React.createElement(IndexText, null),
+      React.createElement(
+        'p',
+        null,
+        ' ',
+        React.createElement('img', { src: '/img/avatar.jpg', alt: 'avatar', className: 'fullimg avatar' }),
+        ' '
+      ),
       React.createElement(
         'section',
         { className: 'text' },
         React.createElement(
           'p',
           null,
-          'Will be updated soon.'
+          'I\'m Minwei Xu 徐旻威. I was born and grew up in Shanghai, China. Now, I am a freshman student at UC Davis, majoring in Computer Science.'
+        ),
+        React.createElement('hr', null),
+        React.createElement(
+          'h1',
+          null,
+          'Programmer'
+        ),
+        React.createElement(
+          'p',
+          null,
+          'I have been programming on Pascal since I was 9 yrs old.When I won the first prize in NOIP (National Olympiad in Informatics in Provinces) in fifth grade, I knew this is my passion.'
+        ),
+        React.createElement(
+          'figure',
+          null,
+          React.createElement('img', { className: 'fullimg', src: '/img/pascal.png', alt: 'pascal' }),
+          React.createElement(
+            'figcaption',
+            null,
+            'Pascal is a very old language with a GUI like this.'
+          )
+        ),
+        React.createElement(
+          'p',
+          null,
+          'While taking part in competitional programming using Pascal, I self-taught Java, C and C++ in my last of high school.In the summer in 2015, I was lucky to have a chance to be part of a research of data visualization in Shanghai Jiao Tong University.'
+        ),
+        React.createElement(
+          'p',
+          null,
+          'I used D3.js to visualize the chemical analysis data of ',
+          React.createElement(
+            'a',
+            { href: 'http://wine.mwxu.me' },
+            'wine'
+          ),
+          ' and the customer survey data of a ',
+          React.createElement(
+            'a',
+            { href: 'http://hotel.mwxu.me' },
+            'hotel'
+          ),
+          '.',
+          React.createElement(
+            'p',
+            null,
+            'This research introduced me web development and development, and I hence studied some basics of JavaScript, HTML/CSS.'
+          )
+        ),
+        React.createElement(
+          'figure',
+          null,
+          React.createElement('img', { className: 'fullimg', src: '/img/hackathon.jpg', alt: 'hackathon' }),
+          React.createElement(
+            'figcaption',
+            { className: 'caption text-muted' },
+            'Dhanush and me at HackingEDU'
+          )
+        ),
+        React.createElement(
+          'p',
+          null,
+          'With the limited skills I accumulated through the summer research, I went to HackingEDU and teamed up with Dhanush Patel and Raj Bhanushali.We made a speech improvement website called ',
+          React.createElement(
+            'a',
+            { href: 'http://speechhacks.mybluemix.net' },
+            'SpeechHacks'
+          ),
+          'and fortunately won the Best Collaboration Hack using Moxtra SDK/API prize.'
+        ),
+        React.createElement('hr', null),
+        React.createElement(
+          'h1',
+          null,
+          'Hit Music Club'
+        ),
+        React.createElement(
+          'p',
+          null,
+          'In my high school, Shanghai High School, I founded the Western Music Club with Kevin Peng and Mingyan Ma. We ran a ',
+          React.createElement(
+            'a',
+            { href: 'http://page.renren.com/601623217' },
+            'website'
+          ),
+          ' and a weekly school radio. We held 3 dance parties, 4 shows. We published a magazine. We worked as the DJs in a basketball league. We held a sales to raise funds for children in the remote mountainous areas. We were so honored to win the 4-star club title in the first year of our club.'
+        ),
+        React.createElement(
+          'figure',
+          null,
+          React.createElement('img', { className: 'fullimg', src: 'img/club.jpg', alt: 'club' }),
+          React.createElement(
+            'figcaption',
+            null,
+            'Kevin Peng and me on the Clubs\' Day.'
+          )
+        ),
+        React.createElement('hr', null),
+        React.createElement(
+          'h1',
+          null,
+          'Cameraman at SHSTV'
+        ),
+        React.createElement(
+          'p',
+          null,
+          'I worked as a cameraman in the entertainment section. I sometimes took part in the script writing or even talked in front of the camera as a guest. I really enjoyed my time there.'
+        ),
+        React.createElement('hr', null),
+        React.createElement(
+          'h1',
+          null,
+          'Amateur dancer'
+        ),
+        React.createElement(
+          'p',
+          null,
+          'I attended the dance competitions in my high school three years in a row and made it to the closing ceremony twice'
         )
       )
     );
@@ -24706,6 +24831,12 @@ var IndexText = React.createClass({
           "a",
           { href: "https://www.github.com/vanshady" },
           "Github"
+        ),
+        "  ·  ",
+        React.createElement(
+          "a",
+          { href: "mailto:mxu31@jhu.edu" },
+          "mxu31@jhu.edu"
         )
       )
     );
