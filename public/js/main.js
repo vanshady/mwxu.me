@@ -24832,7 +24832,7 @@ var IndexText = React.createClass({
           { href: "https://www.github.com/vanshady" },
           "Github"
         ),
-        "  ·  ",
+        React.createElement("br", null),
         React.createElement(
           "a",
           { href: "mailto:mxu31@jhu.edu" },
