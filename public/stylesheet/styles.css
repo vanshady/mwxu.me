@@ -131,14 +131,14 @@ Footer
 footer {
     color: gray;
     font-weight: 400;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     margin-top: 1rem;
     font-size: 14px;
     line-height: 1.4;
     background-color: #e5e5e5;
 }
 
-footer a { color: gray; border-bottom-color: lightgray; }
+footer a { color: gray; border-bottom-color: lightgray; font-style: normal; }
 footer h2 { font-size: 1em; margin: 0; color: #333; }
 footer div.copyline {
     border-top: 1px solid rgba(0,0,0,0.1);
