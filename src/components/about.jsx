@@ -12,7 +12,7 @@ const About = React.createClass({
         <p> <img src="/img/avatar.jpg" alt="avatar" className="fullimg avatar" /> </p>
         <section className="text">
           <p>
-            I'm Minwei Xu 徐旻威. I was born and grew up in Shanghai, China. Now, I am a freshman student at UC Davis, majoring in Computer Science.
+            I'm Minwei Xu 徐旻威. I was born and grew up in Shanghai, China. Now, I'm a Sophomore at Johns Hopkins University. Full-stack developer with dabbling in data science and data visualization. Passionate about programming and devoted to open-source projects. Extensive experience with React.js, Redux, react-router, GraphQL, D3.js and Express. Familiar with Python, C++, Node.js, R and Linux and Git commands.
           </p>
           <hr />
           <h1>Programmer</h1>

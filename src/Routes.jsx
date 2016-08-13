@@ -15,13 +15,15 @@ const Base = require('./components/Base.jsx');
 const Index = require('./components/Index.jsx');
 const Project = require('./components/Project.jsx');
 const About = require('./components/About.jsx');
+const Projects = require('./components/Projects.jsx');
 
 const Routes = (
   <Router history={browserHistory}>
     <Route path="/" component={Base} >
       <IndexRoute component={Index} />
-      <Route path="/project/:name" component={Project} />
+      <Route path="/projects/:name" component={Project} />
       <Route path="/about" component={About} />
+      <Route path="/projects" component={Projects} />
     </Route>
   </Router>
 );

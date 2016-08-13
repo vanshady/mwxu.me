@@ -5,7 +5,7 @@ const Item = React.createClass({
   render() {
     const items = this.props.items.map((item) => {
       key++;
-      const route = `/project/${this.props.year}-${item.label}`;
+      const route = `/projects/${this.props.year}-${item.label}`;
       return (
         <li key={key}>
           <a href={route}>

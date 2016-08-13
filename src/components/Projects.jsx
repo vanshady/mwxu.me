@@ -3,7 +3,12 @@ const Item = require('./Item.jsx');
 
 const list = require('./portfolio.json');
 
-const IndexSection = React.createClass({
+const Projects = React.createClass({
+  componentDidMount() {
+    document.getElementById('homeTab').className = '';
+    document.getElementById('aboutTab').className = '';
+    document.getElementById('projectsTab').className = 'active';
+  },
   render() {
     return (
       <div className="writingwrapper">
@@ -54,4 +59,4 @@ const IndexSection = React.createClass({
   },
 });
 
-module.exports = IndexSection;
+module.exports = Projects;

@@ -24386,6 +24386,7 @@ var Base = require('./components/Base.jsx');
 var Index = require('./components/Index.jsx');
 var Project = require('./components/Project.jsx');
 var About = require('./components/About.jsx');
+var Projects = require('./components/Projects.jsx');
 
 var Routes = React.createElement(
   Router,
@@ -24394,14 +24395,15 @@ var Routes = React.createElement(
     Route,
     { path: '/', component: Base },
     React.createElement(IndexRoute, { component: Index }),
-    React.createElement(Route, { path: '/project/:name', component: Project }),
-    React.createElement(Route, { path: '/about', component: About })
+    React.createElement(Route, { path: '/projects/:name', component: Project }),
+    React.createElement(Route, { path: '/about', component: About }),
+    React.createElement(Route, { path: '/projects', component: Projects })
   )
 );
 
 module.exports = Routes;
 
-},{"./components/About.jsx":221,"./components/Base.jsx":222,"./components/Index.jsx":223,"./components/Project.jsx":227,"react":217,"react-router":81}],221:[function(require,module,exports){
+},{"./components/About.jsx":221,"./components/Base.jsx":222,"./components/Index.jsx":223,"./components/Project.jsx":227,"./components/Projects.jsx":228,"react":217,"react-router":81}],221:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
@@ -24430,7 +24432,7 @@ var About = React.createClass({
         React.createElement(
           'p',
           null,
-          'I\'m Minwei Xu 徐旻威. I was born and grew up in Shanghai, China. Now, I am a freshman student at UC Davis, majoring in Computer Science.'
+          'I\'m Minwei Xu 徐旻威. I was born and grew up in Shanghai, China. Now, I\'m a Sophomore at Johns Hopkins University. Full-stack developer with dabbling in data science and data visualization. Passionate about programming and devoted to open-source projects. Extensive experience with React.js, Redux, react-router, GraphQL, D3.js and Express. Familiar with Python, C++, Node.js, R and Linux and Git commands.'
         ),
         React.createElement('hr', null),
         React.createElement(
@@ -24608,6 +24610,15 @@ var Base = React.createClass({
                 null,
                 React.createElement(
                   "a",
+                  { href: "/projects", id: "projectsTab" },
+                  "Projects"
+                )
+              ),
+              React.createElement(
+                "li",
+                null,
+                React.createElement(
+                  "a",
                   { href: "/Minwei_Xu_Resume.pdf" },
                   "Resume"
                 )
@@ -24710,7 +24721,7 @@ var IndexSection = React.createClass({
               null,
               React.createElement(
                 'a',
-                { href: '/project/2016-Realtime Chat Application' },
+                { href: '/projects/2016-Realtime Chat Application' },
                 React.createElement('img', { src: '/img/chat.png', className: 'fullimg' }),
                 React.createElement(
                   'b',
@@ -24729,7 +24740,7 @@ var IndexSection = React.createClass({
               null,
               React.createElement(
                 'a',
-                { href: '/project/2016-SiliconHacks' },
+                { href: '/projects/2016-SiliconHacks' },
                 React.createElement('img', { src: '/img/silicon.png', className: 'fullimg' }),
                 React.createElement(
                   'b',
@@ -24748,7 +24759,7 @@ var IndexSection = React.createClass({
               null,
               React.createElement(
                 'a',
-                { href: '/project/2016-Eventbrite Data Visualization' },
+                { href: '/projects/2016-Eventbrite Data Visualization' },
                 React.createElement('img', { src: '/img/GMapFull.png', className: 'fullimg' }),
                 React.createElement(
                   'b',
@@ -24767,7 +24778,7 @@ var IndexSection = React.createClass({
               null,
               React.createElement(
                 'a',
-                { href: '/project/2016-React Calculator' },
+                { href: '/projects/2016-React Calculator' },
                 React.createElement('img', { src: '/img/calculator.png', className: 'fullimg' }),
                 React.createElement(
                   'b',
@@ -24796,7 +24807,7 @@ var IndexSection = React.createClass({
 
 module.exports = IndexSection;
 
-},{"./Item.jsx":226,"./portfolio.json":228,"react":217}],225:[function(require,module,exports){
+},{"./Item.jsx":226,"./portfolio.json":229,"react":217}],225:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -24858,7 +24869,7 @@ var Item = React.createClass({
 
     var items = this.props.items.map(function (item) {
       key++;
-      var route = "/project/" + _this.props.year + "-" + item.label;
+      var route = "/projects/" + _this.props.year + "-" + item.label;
       return React.createElement(
         "li",
         { key: key },
@@ -24908,7 +24919,10 @@ module.exports = Item;
 },{"react":217}],227:[function(require,module,exports){
 'use strict';
 
+var _react = require('react');
+
 var React = require('react');
+
 var IndexSection = require('./IndexSection.jsx');
 
 var projects = require('./portfolio.json');
@@ -24918,6 +24932,7 @@ var Project = React.createClass({
   componentDidMount: function componentDidMount() {
     document.getElementById('homeTab').className = '';
     document.getElementById('aboutTab').className = '';
+    document.getElementById('projectsTab').className = 'active';
   },
   componentDidUpdate: function componentDidUpdate() {
     // window.scrollTo(0, 0);
@@ -24926,6 +24941,7 @@ var Project = React.createClass({
     var key = 0;
     var year = this.props.params.name.slice(0, 4);
     var name = this.props.params.name.slice(5);
+
     var project = projects[year].filter(function (v) {
       return v.label === name;
     })[0];
@@ -25014,9 +25030,141 @@ var Project = React.createClass({
   }
 });
 
+Project.contextTypes = {
+  router: _react.PropTypes.object.isRequired
+};
+
 module.exports = Project;
 
-},{"./IndexSection.jsx":224,"./portfolio.json":228,"react":217}],228:[function(require,module,exports){
+},{"./IndexSection.jsx":224,"./portfolio.json":229,"react":217}],228:[function(require,module,exports){
+'use strict';
+
+var React = require('react');
+var Item = require('./Item.jsx');
+
+var list = require('./portfolio.json');
+
+var Projects = React.createClass({
+  displayName: 'Projects',
+  componentDidMount: function componentDidMount() {
+    document.getElementById('homeTab').className = '';
+    document.getElementById('aboutTab').className = '';
+    document.getElementById('projectsTab').className = 'active';
+  },
+  render: function render() {
+    return React.createElement(
+      'div',
+      { className: 'writingwrapper' },
+      React.createElement(
+        'section',
+        { className: 'featured' },
+        React.createElement(
+          'div',
+          { className: 'textspace top' },
+          React.createElement(
+            'aside',
+            null,
+            React.createElement(
+              'h2',
+              null,
+              'Featured Project'
+            )
+          ),
+          React.createElement(
+            'div',
+            { className: 'grid' },
+            React.createElement(
+              'div',
+              null,
+              React.createElement(
+                'a',
+                { href: '/projects/2016-Realtime Chat Application' },
+                React.createElement('img', { src: '/img/chat.png', className: 'fullimg' }),
+                React.createElement(
+                  'b',
+                  { className: 'label' },
+                  'Realtime Chat Application'
+                ),
+                React.createElement(
+                  'em',
+                  { className: 'detail' },
+                  '2016'
+                )
+              )
+            ),
+            React.createElement(
+              'div',
+              null,
+              React.createElement(
+                'a',
+                { href: '/projects/2016-SiliconHacks' },
+                React.createElement('img', { src: '/img/silicon.png', className: 'fullimg' }),
+                React.createElement(
+                  'b',
+                  { className: 'label' },
+                  'SiliconHacks'
+                ),
+                React.createElement(
+                  'em',
+                  { className: 'detail' },
+                  '2016'
+                )
+              )
+            ),
+            React.createElement(
+              'div',
+              null,
+              React.createElement(
+                'a',
+                { href: '/projects/2016-Eventbrite Data Visualization' },
+                React.createElement('img', { src: '/img/GMapFull.png', className: 'fullimg' }),
+                React.createElement(
+                  'b',
+                  { className: 'label' },
+                  'Eventbrite Data Visualization'
+                ),
+                React.createElement(
+                  'em',
+                  { className: 'detail' },
+                  '2016'
+                )
+              )
+            ),
+            React.createElement(
+              'div',
+              null,
+              React.createElement(
+                'a',
+                { href: '/projects/2016-React Calculator' },
+                React.createElement('img', { src: '/img/calculator.png', className: 'fullimg' }),
+                React.createElement(
+                  'b',
+                  { className: 'label' },
+                  'React Calculator'
+                ),
+                React.createElement(
+                  'em',
+                  { className: 'detail' },
+                  '2016'
+                )
+              )
+            )
+          )
+        )
+      ),
+      React.createElement(
+        'section',
+        { className: 'writinglist' },
+        React.createElement(Item, { year: '2016', items: list[2016] }),
+        React.createElement(Item, { year: '2015', items: list[2015] })
+      )
+    );
+  }
+});
+
+module.exports = Projects;
+
+},{"./Item.jsx":226,"./portfolio.json":229,"react":217}],229:[function(require,module,exports){
 module.exports={
   "2016": [
     {
@@ -25153,7 +25301,7 @@ module.exports={
   ],
 };
 
-},{}],229:[function(require,module,exports){
+},{}],230:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
@@ -25162,4 +25310,4 @@ var ReactDOM = require('react-dom');
 var Routes = require('./Routes.jsx');
 ReactDOM.render(Routes, document.getElementById('main'));
 
-},{"./Routes.jsx":220,"react":217,"react-dom":51}]},{},[229]);
+},{"./Routes.jsx":220,"react":217,"react-dom":51}]},{},[230]);
