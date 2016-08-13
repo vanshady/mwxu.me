@@ -24382,10 +24382,10 @@ var IndexRoute = ReactRouter.IndexRoute;
 // });
 
 
-var Base = require('./components/base.jsx');
-var Index = require('./components/index.jsx');
-var Project = require('./components/project.jsx');
-var About = require('./components/about.jsx');
+var Base = require('./components/Base.jsx');
+var Index = require('./components/Index.jsx');
+var Project = require('./components/Project.jsx');
+var About = require('./components/About.jsx');
 
 var Routes = React.createElement(
   Router,
@@ -24401,11 +24401,11 @@ var Routes = React.createElement(
 
 module.exports = Routes;
 
-},{"./components/about.jsx":221,"./components/base.jsx":222,"./components/index.jsx":223,"./components/project.jsx":228,"react":217,"react-router":81}],221:[function(require,module,exports){
+},{"./components/About.jsx":221,"./components/Base.jsx":222,"./components/Index.jsx":223,"./components/Project.jsx":227,"react":217,"react-router":81}],221:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
-var IndexText = require('./indextext.jsx');
+var IndexText = require('./IndexText.jsx');
 
 var About = React.createClass({
   displayName: 'About',
@@ -24557,7 +24557,7 @@ var About = React.createClass({
 
 module.exports = About;
 
-},{"./indextext.jsx":225,"react":217}],222:[function(require,module,exports){
+},{"./IndexText.jsx":225,"react":217}],222:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -24608,7 +24608,7 @@ var Base = React.createClass({
                 null,
                 React.createElement(
                   "a",
-                  { href: "/Minwei_Xu_Resume.pdf", download: true },
+                  { href: "/Minwei_Xu_Resume.pdf" },
                   "Resume"
                 )
               )
@@ -24652,8 +24652,8 @@ module.exports = Base;
 'use strict';
 
 var React = require('react');
-var IndexSection = require('./indexsection.jsx');
-var IndexText = require('./indextext.jsx');
+var IndexSection = require('./IndexSection.jsx');
+var IndexText = require('./IndexText.jsx');
 
 var Index = React.createClass({
   displayName: 'Index',
@@ -24673,11 +24673,11 @@ var Index = React.createClass({
 
 module.exports = Index;
 
-},{"./indexsection.jsx":224,"./indextext.jsx":225,"react":217}],224:[function(require,module,exports){
+},{"./IndexSection.jsx":224,"./IndexText.jsx":225,"react":217}],224:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
-var Item = require('./item.jsx');
+var Item = require('./Item.jsx');
 
 var list = require('./portfolio.json');
 
@@ -24796,7 +24796,7 @@ var IndexSection = React.createClass({
 
 module.exports = IndexSection;
 
-},{"./item.jsx":226,"./portfolio.json":227,"react":217}],225:[function(require,module,exports){
+},{"./Item.jsx":226,"./portfolio.json":228,"react":217}],225:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -24906,6 +24906,117 @@ var Item = React.createClass({
 module.exports = Item;
 
 },{"react":217}],227:[function(require,module,exports){
+'use strict';
+
+var React = require('react');
+var IndexSection = require('./IndexSection.jsx');
+
+var projects = require('./portfolio.json');
+
+var Project = React.createClass({
+  displayName: 'Project',
+  componentDidMount: function componentDidMount() {
+    document.getElementById('homeTab').className = '';
+    document.getElementById('aboutTab').className = '';
+  },
+  componentDidUpdate: function componentDidUpdate() {
+    // window.scrollTo(0, 0);
+  },
+  render: function render() {
+    var key = 0;
+    var year = this.props.params.name.slice(0, 4);
+    var name = this.props.params.name.slice(5);
+    var project = projects[year].filter(function (v) {
+      return v.label === name;
+    })[0];
+    var time = project.month + ' ' + year;
+    var image = function image() {
+      if (project.img) {
+        if (project.link) {
+          return React.createElement(
+            'a',
+            { href: project.link },
+            React.createElement('img', { src: project.img, alt: name, className: 'fullimg' })
+          );
+        } else if (project.code) {
+          return React.createElement(
+            'a',
+            { href: project.code },
+            React.createElement('img', { src: project.img, alt: name, className: 'fullimg' })
+          );
+        }
+        return React.createElement('img', { src: project.img, alt: name, className: 'fullimg' });
+      }
+    };
+    var paragraphs = project.desc.map(function (p) {
+      key++;
+      return React.createElement('p', { key: key, dangerouslySetInnerHTML: { __html: p } });
+    });
+    var link = function link() {
+      if (project.link) {
+        return React.createElement(
+          'p',
+          null,
+          'Demo: ',
+          React.createElement(
+            'a',
+            { href: project.link },
+            project.link
+          )
+        );
+      }
+    };
+    var code = function code() {
+      if (project.code) {
+        return React.createElement(
+          'p',
+          null,
+          'Code: ',
+          React.createElement(
+            'a',
+            { href: project.code },
+            project.code
+          )
+        );
+      }
+    };
+    return React.createElement(
+      'div',
+      null,
+      React.createElement(
+        'article',
+        null,
+        React.createElement(
+          'h1',
+          null,
+          name
+        ),
+        React.createElement(
+          'div',
+          { className: 'body' },
+          image(),
+          paragraphs,
+          link(),
+          code(),
+          React.createElement(
+            'p',
+            null,
+            React.createElement(
+              'time',
+              { pubdate: true },
+              time
+            )
+          )
+        )
+      ),
+      React.createElement(IndexSection, null)
+    );
+  }
+});
+
+module.exports = Project;
+
+},{"./IndexSection.jsx":224,"./portfolio.json":228,"react":217}],228:[function(require,module,exports){
 module.exports={
   "2016": [
     {
@@ -25042,118 +25153,7 @@ module.exports={
   ],
 };
 
-},{}],228:[function(require,module,exports){
-'use strict';
-
-var React = require('react');
-var IndexSection = require('./indexsection.jsx');
-
-var projects = require('./portfolio.json');
-
-var Project = React.createClass({
-  displayName: 'Project',
-  componentDidMount: function componentDidMount() {
-    document.getElementById('homeTab').className = '';
-    document.getElementById('aboutTab').className = '';
-  },
-  componentDidUpdate: function componentDidUpdate() {
-    // window.scrollTo(0, 0);
-  },
-  render: function render() {
-    var key = 0;
-    var year = this.props.params.name.slice(0, 4);
-    var name = this.props.params.name.slice(5);
-    var project = projects[year].filter(function (v) {
-      return v.label === name;
-    })[0];
-    var time = project.month + ' ' + year;
-    var image = function image() {
-      if (project.img) {
-        if (project.link) {
-          return React.createElement(
-            'a',
-            { href: project.link },
-            React.createElement('img', { src: project.img, alt: name, className: 'fullimg' })
-          );
-        } else if (project.code) {
-          return React.createElement(
-            'a',
-            { href: project.code },
-            React.createElement('img', { src: project.img, alt: name, className: 'fullimg' })
-          );
-        }
-        return React.createElement('img', { src: project.img, alt: name, className: 'fullimg' });
-      }
-    };
-    var paragraphs = project.desc.map(function (p) {
-      key++;
-      return React.createElement('p', { key: key, dangerouslySetInnerHTML: { __html: p } });
-    });
-    var link = function link() {
-      if (project.link) {
-        return React.createElement(
-          'p',
-          null,
-          'Demo: ',
-          React.createElement(
-            'a',
-            { href: project.link },
-            project.link
-          )
-        );
-      }
-    };
-    var code = function code() {
-      if (project.code) {
-        return React.createElement(
-          'p',
-          null,
-          'Code: ',
-          React.createElement(
-            'a',
-            { href: project.code },
-            project.code
-          )
-        );
-      }
-    };
-    return React.createElement(
-      'div',
-      null,
-      React.createElement(
-        'article',
-        null,
-        React.createElement(
-          'h1',
-          null,
-          name
-        ),
-        React.createElement(
-          'div',
-          { className: 'body' },
-          image(),
-          paragraphs,
-          link(),
-          code(),
-          React.createElement(
-            'p',
-            null,
-            React.createElement(
-              'time',
-              { pubdate: true },
-              time
-            )
-          )
-        )
-      ),
-      React.createElement(IndexSection, null)
-    );
-  }
-});
-
-module.exports = Project;
-
-},{"./indexsection.jsx":224,"./portfolio.json":227,"react":217}],229:[function(require,module,exports){
+},{}],229:[function(require,module,exports){
 'use strict';
 
 var React = require('react');

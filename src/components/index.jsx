@@ -1,6 +1,6 @@
 const React = require('react');
-const IndexSection = require('./indexsection.jsx');
-const IndexText = require('./indextext.jsx');
+const IndexSection = require('./IndexSection.jsx');
+const IndexText = require('./IndexText.jsx');
 
 const Index = React.createClass({
   componentDidMount() {

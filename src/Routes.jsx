@@ -11,10 +11,10 @@ const IndexRoute = ReactRouter.IndexRoute;
 // });
 import { browserHistory } from 'react-router';
 
-const Base = require('./components/base.jsx');
-const Index = require('./components/index.jsx');
-const Project = require('./components/project.jsx');
-const About = require('./components/about.jsx');
+const Base = require('./components/Base.jsx');
+const Index = require('./components/Index.jsx');
+const Project = require('./components/Project.jsx');
+const About = require('./components/About.jsx');
 
 const Routes = (
   <Router history={browserHistory}>

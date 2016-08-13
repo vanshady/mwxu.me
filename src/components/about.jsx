@@ -1,5 +1,5 @@
 const React = require('react');
-const IndexText = require('./indextext.jsx');
+const IndexText = require('./IndexText.jsx');
 
 const About = React.createClass({
   componentDidMount() {

@@ -13,7 +13,7 @@ const Base = React.createClass({
               <ul>
                 <li><a href="/" id="homeTab">Home</a></li>
                 <li><a href="/about" id="aboutTab">About</a></li>
-                <li><a href="/Minwei_Xu_Resume.pdf" download>Resume</a></li>
+                <li><a href="/Minwei_Xu_Resume.pdf">Resume</a></li>
               </ul>
             </nav>
           </div>

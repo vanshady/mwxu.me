@@ -1,5 +1,5 @@
 const React = require('react');
-const Item = require('./item.jsx');
+const Item = require('./Item.jsx');
 
 const list = require('./portfolio.json');
 

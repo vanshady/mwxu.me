@@ -1,5 +1,5 @@
 const React = require('react');
-const IndexSection = require('./indexsection.jsx');
+const IndexSection = require('./IndexSection.jsx');
 
 const projects = require('./portfolio.json');
 
