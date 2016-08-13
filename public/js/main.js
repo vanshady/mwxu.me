@@ -24663,7 +24663,7 @@ module.exports = Base;
 'use strict';
 
 var React = require('react');
-var IndexSection = require('./IndexSection.jsx');
+var Projects = require('./Projects.jsx');
 var IndexText = require('./IndexText.jsx');
 
 var Index = React.createClass({
@@ -24677,14 +24677,14 @@ var Index = React.createClass({
       'div',
       null,
       React.createElement(IndexText, null),
-      React.createElement(IndexSection, null)
+      React.createElement(Projects, null)
     );
   }
 });
 
 module.exports = Index;
 
-},{"./IndexSection.jsx":224,"./IndexText.jsx":225,"react":217}],224:[function(require,module,exports){
+},{"./IndexText.jsx":225,"./Projects.jsx":228,"react":217}],224:[function(require,module,exports){
 'use strict';
 
 var React = require('react');

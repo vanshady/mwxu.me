@@ -1,5 +1,5 @@
 const React = require('react');
-const IndexSection = require('./IndexSection.jsx');
+const Projects = require('./Projects.jsx');
 
 const projects = require('./portfolio.json');
 
@@ -70,7 +70,7 @@ const Project = React.createClass({
             </p>
           </div>
         </article>
-        <IndexSection />
+        <Projects />
       </div>
     );
   },

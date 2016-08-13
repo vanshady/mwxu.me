@@ -1,5 +1,5 @@
 const React = require('react');
-const IndexSection = require('./IndexSection.jsx');
+const Projects = require('./Projects.jsx');
 const IndexText = require('./IndexText.jsx');
 
 const Index = React.createClass({
@@ -11,7 +11,7 @@ const Index = React.createClass({
     return (
       <div>
         <IndexText />
-        <IndexSection />
+        <Projects />
       </div>
     );
   },
