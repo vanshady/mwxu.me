@@ -40,9 +40,9 @@ const Projects = React.createClass({
                 </a>
               </div>
               <div>
-                <a href="/projects/2016-React Calculator">
-                  <img src="/img/calculator.png" className="fullimg" />
-                  <b className="label">React Calculator</b>
+                <a href="/projects/2015-Living Liquid">
+                  <img src="/img/livingliquid.png" className="fullimg" />
+                  <b className="label">Living Liquid</b>
                   <em className="detail">2016</em>
                 </a>
               </div>
