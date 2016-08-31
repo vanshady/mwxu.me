@@ -20,6 +20,9 @@ const Project = React.createClass({
     })[0];
     const time = `${project.month} ${year}`;
     const image = () => {
+      if (project.video) {
+        return <div dangerouslySetInnerHTML={{ __html: project.video }}></div>;
+      } else
       if (project.img) {
         if (project.link) {
           return (<a href={project.link}><img src={project.img} alt={name} className="fullimg" /></a>);
