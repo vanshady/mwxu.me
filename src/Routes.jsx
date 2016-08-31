@@ -9,7 +9,7 @@ const IndexRoute = ReactRouter.IndexRoute;
 // const History = routerHistory(CreateHistory)({
 //   queryKey: false,
 // });
-import { browserHistory } from 'react-router';
+import { browserHistory, Redirect } from 'react-router';
 
 const Base = require('./components/Base.jsx');
 const Index = require('./components/Index.jsx');
@@ -24,6 +24,7 @@ const Routes = (
       <Route path="/projects/:name" component={Project} />
       <Route path="/about" component={About} />
       <Route path="/projects" component={Projects} />
+      <Redirect from="*" to="/" />
     </Route>
   </Router>
 );
