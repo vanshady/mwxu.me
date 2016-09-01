@@ -24820,7 +24820,10 @@ var Project = React.createClass({
     })[0];
     var time = project.month + ' ' + year;
     var image = function image() {
-      if (project.img) {
+      if (project.video) {
+        return React.createElement('div', { dangerouslySetInnerHTML: { __html: project.video } });
+        console.log('HAHAHHA');
+      } else if (project.img) {
         if (project.link) {
           return React.createElement(
             'a',
@@ -24835,11 +24838,6 @@ var Project = React.createClass({
           );
         }
         return React.createElement('img', { src: project.img, alt: name, className: 'fullimg' });
-      }
-    };
-    var video = function video() {
-      if (project.video) {
-        return React.createElement('div', { dangerouslySetInnerHTML: { __html: project.video } });
       }
     };
     var paragraphs = project.desc.map(function (p) {
@@ -24888,7 +24886,6 @@ var Project = React.createClass({
         React.createElement(
           'div',
           { className: 'body' },
-          video(),
           image(),
           paragraphs,
           link(),
@@ -25128,7 +25125,7 @@ module.exports={
   "2015": [
     {
       "label": "Living Liquid",
-      "link": "/img/livingliquid.png",
+      "img": "/img/livingliquid.png",
       "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/9xNOjb1kUio\" frameborder=\"0\" allowfullscreen></iframe>",
       "desc": [
         "A research project conducted at UC Davis",
