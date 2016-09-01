@@ -25129,7 +25129,7 @@ module.exports={
     {
       "label": "Living Liquid",
       "link": "/img/livingliquid.png",
-      "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/9xNOjb1kUio\" frameborder=\"0\" allowfullscreen></iframe>",
+      "video": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/9xNOjb1kUio\" frameborder=\"0\" allowfullscreen></iframe>",
       "desc": [
         "A research project conducted at UC Davis",
         "An interactive visualization of marine animal migration using a tangible object and touchscreen interface. Currently on exhibition at Exploratorium."
