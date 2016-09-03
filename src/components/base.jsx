@@ -21,11 +21,18 @@ const Base = React.createClass({
         </header>
         {this.props.children}
         <footer>
-          <em>
-            <a href="https://www.linkedin.com/in/minweixu">Linkedin</a>&nbsp; · &nbsp;
-            <a href="https://www.facebook.com/william.hsu.182">Facebook</a>&nbsp; · &nbsp;
-            <a href="https://www.github.com/vanshady">Github</a>
-          </em>
+          <section className="footersection">
+            <div className="title">
+              <h2>Minwei Xu</h2>
+              Full Stack Developer
+            </div>
+            <div className="copyline">
+              <a href="mailto:mxu31@jhu.edu">mxu31@jhu.edu</a>&nbsp; · &nbsp;
+              <a href="https://www.linkedin.com/in/minweixu">Linkedin</a>&nbsp; · &nbsp;
+              <a href="https://www.facebook.com/william.hsu.182">Facebook</a>&nbsp; · &nbsp;
+              <a href="https://www.github.com/vanshady">Github</a>
+            </div>
+          </section>
         </footer>
       </div>
     );
