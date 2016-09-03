@@ -24633,24 +24633,44 @@ var Base = React.createClass({
         "footer",
         null,
         React.createElement(
-          "em",
-          null,
+          "section",
+          { className: "footersection" },
           React.createElement(
-            "a",
-            { href: "https://www.linkedin.com/in/minweixu" },
-            "Linkedin"
+            "div",
+            { className: "title" },
+            React.createElement(
+              "h2",
+              null,
+              "Minwei Xu"
+            ),
+            "Full Stack Developer"
           ),
-          "  ·  ",
           React.createElement(
-            "a",
-            { href: "https://www.facebook.com/william.hsu.182" },
-            "Facebook"
-          ),
-          "  ·  ",
-          React.createElement(
-            "a",
-            { href: "https://www.github.com/vanshady" },
-            "Github"
+            "div",
+            { className: "copyline" },
+            React.createElement(
+              "a",
+              { href: "mailto:mxu31@jhu.edu" },
+              "mxu31@jhu.edu"
+            ),
+            "  ·  ",
+            React.createElement(
+              "a",
+              { href: "https://www.linkedin.com/in/minweixu" },
+              "Linkedin"
+            ),
+            "  ·  ",
+            React.createElement(
+              "a",
+              { href: "https://www.facebook.com/william.hsu.182" },
+              "Facebook"
+            ),
+            "  ·  ",
+            React.createElement(
+              "a",
+              { href: "https://www.github.com/vanshady" },
+              "Github"
+            )
           )
         )
       )
@@ -24672,6 +24692,7 @@ var Index = React.createClass({
   componentDidMount: function componentDidMount() {
     document.getElementById('homeTab').className = 'active';
     document.getElementById('aboutTab').className = '';
+    document.getElementById('projectsTab').className = '';
   },
   render: function render() {
     return React.createElement(
@@ -24822,7 +24843,6 @@ var Project = React.createClass({
     var image = function image() {
       if (project.video) {
         return React.createElement('div', { dangerouslySetInnerHTML: { __html: project.video } });
-        console.log('HAHAHHA');
       } else if (project.img) {
         if (project.link) {
           return React.createElement(
@@ -24900,8 +24920,7 @@ var Project = React.createClass({
             )
           )
         )
-      ),
-      React.createElement(Projects, null)
+      )
     );
   }
 });
@@ -24945,6 +24964,25 @@ var Projects = React.createClass({
           React.createElement(
             'div',
             { className: 'grid' },
+            React.createElement(
+              'div',
+              { style: { width: '200%', paddingLeft: '9px' } },
+              React.createElement(
+                'a',
+                { href: '/projects/2015-Living Liquid' },
+                React.createElement('iframe', { width: '100%', height: '300', title: 'Living Liquid', src: 'https://www.youtube.com/embed/9xNOjb1kUio', frameBorder: '0', allowFullScreen: true }),
+                React.createElement(
+                  'b',
+                  { className: 'label' },
+                  'Living Liquid'
+                ),
+                React.createElement(
+                  'em',
+                  { className: 'detail' },
+                  '2015'
+                )
+              )
+            ),
             React.createElement(
               'div',
               null,
@@ -25007,12 +25045,12 @@ var Projects = React.createClass({
               null,
               React.createElement(
                 'a',
-                { href: '/projects/2015-Living Liquid' },
-                React.createElement('img', { src: '/img/livingliquid.png', className: 'fullimg' }),
+                { href: '/projects/2016-React Calculator' },
+                React.createElement('img', { src: '/img/calculator.png', className: 'fullimg' }),
                 React.createElement(
                   'b',
                   { className: 'label' },
-                  'Living Liquid'
+                  'React Calculator'
                 ),
                 React.createElement(
                   'em',

@@ -18,6 +18,13 @@ const Projects = React.createClass({
               <h2>Featured Project</h2>
             </aside>
             <div className="grid">
+              <div style={{ width: '200%', paddingLeft: '9px' }}>
+                <a href="/projects/2015-Living Liquid">
+                  <iframe width="100%" height="300" title="Living Liquid" src="https://www.youtube.com/embed/9xNOjb1kUio" frameBorder="0" allowFullScreen></iframe>
+                  <b className="label">Living Liquid</b>
+                  <em className="detail">2015</em>
+                </a>
+              </div>
               <div>
                 <a href="/projects/2016-Realtime Chat Application">
                   <img src="/img/chat.png" className="fullimg" />
@@ -40,9 +47,9 @@ const Projects = React.createClass({
                 </a>
               </div>
               <div>
-                <a href="/projects/2015-Living Liquid">
-                  <img src="/img/livingliquid.png" className="fullimg" />
-                  <b className="label">Living Liquid</b>
+                <a href="/projects/2016-React Calculator">
+                  <img src="/img/calculator.png" className="fullimg" />
+                  <b className="label">React Calculator</b>
                   <em className="detail">2016</em>
                 </a>
               </div>
