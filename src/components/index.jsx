@@ -6,6 +6,7 @@ const Index = React.createClass({
   componentDidMount() {
     document.getElementById('homeTab').className = 'active';
     document.getElementById('aboutTab').className = '';
+    document.getElementById('projectsTab').className = '';
   },
   render() {
     return (
