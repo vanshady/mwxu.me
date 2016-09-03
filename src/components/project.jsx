@@ -73,7 +73,7 @@ const Project = React.createClass({
             </p>
           </div>
         </article>
-        <Projects />
+        {/* <Projects /> */}
       </div>
     );
   },
