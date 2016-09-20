@@ -24404,7 +24404,7 @@ var Routes = React.createElement(
 
 module.exports = Routes;
 
-},{"./components/About.jsx":221,"./components/Base.jsx":222,"./components/Index.jsx":223,"./components/Project.jsx":226,"./components/Projects.jsx":227,"react":217,"react-router":81}],221:[function(require,module,exports){
+},{"./components/About.jsx":221,"./components/Base.jsx":222,"./components/Index.jsx":224,"./components/Project.jsx":227,"./components/Projects.jsx":228,"react":217,"react-router":81}],221:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
@@ -24560,7 +24560,7 @@ var About = React.createClass({
 
 module.exports = About;
 
-},{"./IndexText.jsx":224,"react":217}],222:[function(require,module,exports){
+},{"./IndexText.jsx":225,"react":217}],222:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -24681,12 +24681,145 @@ var Base = React.createClass({
 module.exports = Base;
 
 },{"react":217}],223:[function(require,module,exports){
+"use strict";
+
+var React = require('react');
+
+var Projects = React.createClass({
+  displayName: "Projects",
+  render: function render() {
+    return React.createElement(
+      "div",
+      { className: "writingwrapper" },
+      React.createElement(
+        "section",
+        { className: "featured" },
+        React.createElement(
+          "div",
+          { className: "textspace top" },
+          React.createElement(
+            "aside",
+            null,
+            React.createElement(
+              "h2",
+              null,
+              "Featured Projects"
+            )
+          ),
+          React.createElement(
+            "div",
+            { className: "grid" },
+            React.createElement(
+              "div",
+              { style: { width: '200%', paddingLeft: '9px' } },
+              React.createElement(
+                "a",
+                { href: "/projects/2015-Living Liquid" },
+                React.createElement("iframe", { width: "100%", height: "300", title: "Living Liquid", src: "https://www.youtube.com/embed/9xNOjb1kUio", frameBorder: "0", allowFullScreen: true }),
+                React.createElement(
+                  "b",
+                  { className: "label" },
+                  "Living Liquid"
+                ),
+                React.createElement(
+                  "em",
+                  { className: "detail" },
+                  "2015"
+                )
+              )
+            ),
+            React.createElement(
+              "div",
+              null,
+              React.createElement(
+                "a",
+                { href: "/projects/2016-AllCommunication" },
+                React.createElement("img", { src: "/img/AllCommunication.png", className: "fullimg" }),
+                React.createElement(
+                  "b",
+                  { className: "label" },
+                  "AllCommunication"
+                ),
+                React.createElement(
+                  "em",
+                  { className: "detail" },
+                  "2016"
+                )
+              )
+            ),
+            React.createElement(
+              "div",
+              null,
+              React.createElement(
+                "a",
+                { href: "/projects/2016-Realtime Chat Application" },
+                React.createElement("img", { src: "/img/chat.png", className: "fullimg" }),
+                React.createElement(
+                  "b",
+                  { className: "label" },
+                  "Realtime Chat Application"
+                ),
+                React.createElement(
+                  "em",
+                  { className: "detail" },
+                  "2016"
+                )
+              )
+            ),
+            React.createElement(
+              "div",
+              null,
+              React.createElement(
+                "a",
+                { href: "/projects/2016-SiliconHacks" },
+                React.createElement("img", { src: "/img/silicon.png", className: "fullimg" }),
+                React.createElement(
+                  "b",
+                  { className: "label" },
+                  "SiliconHacks"
+                ),
+                React.createElement(
+                  "em",
+                  { className: "detail" },
+                  "2016"
+                )
+              )
+            ),
+            React.createElement(
+              "div",
+              null,
+              React.createElement(
+                "a",
+                { href: "/projects/2016-Eventbrite Data Visualization" },
+                React.createElement("img", { src: "/img/GMapFull.png", className: "fullimg" }),
+                React.createElement(
+                  "b",
+                  { className: "label" },
+                  "Eventbrite Data Visualization"
+                ),
+                React.createElement(
+                  "em",
+                  { className: "detail" },
+                  "2016"
+                )
+              )
+            )
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = Projects;
+
+},{"react":217}],224:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
-var Projects = require('./Projects.jsx');
+var Featured = require('./Featured.jsx');
 var IndexText = require('./IndexText.jsx');
-// const Skills = require('./Skills.jsx');
+var Skills = require('./Skills.jsx');
 var Index = React.createClass({
   displayName: 'Index',
   componentDidMount: function componentDidMount() {
@@ -24699,14 +24832,15 @@ var Index = React.createClass({
       'div',
       null,
       React.createElement(IndexText, null),
-      React.createElement(Projects, null)
+      React.createElement(Featured, null),
+      React.createElement(Skills, null)
     );
   }
 });
 
 module.exports = Index;
 
-},{"./IndexText.jsx":224,"./Projects.jsx":227,"react":217}],224:[function(require,module,exports){
+},{"./Featured.jsx":223,"./IndexText.jsx":225,"./Skills.jsx":229,"react":217}],225:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -24734,13 +24868,31 @@ var IndexText = React.createClass({
         React.createElement(
           "a",
           { href: "https://www.linkedin.com/in/minweixu" },
-          "Linkedin"
+          React.createElement(
+            "span",
+            { style: { position: 'relative', top: '2px', right: '1px' } },
+            React.createElement("img", { src: "/img/linkedin.png", width: "25", height: "25", border: "0" })
+          ),
+          React.createElement(
+            "span",
+            { style: { color: 'black', fontWeight: '500' } },
+            "Linkedin"
+          )
         ),
         "  ·  ",
         React.createElement(
           "a",
           { href: "https://www.github.com/vanshady" },
-          "Github"
+          React.createElement(
+            "span",
+            { style: { position: 'relative', top: '2px', right: '2px' } },
+            React.createElement("img", { src: "/img/github.png", width: "24", height: "24", border: "0" })
+          ),
+          React.createElement(
+            "span",
+            { style: { color: 'black', fontWeight: '500' } },
+            "Github"
+          )
         ),
         React.createElement("br", null),
         React.createElement(
@@ -24755,7 +24907,7 @@ var IndexText = React.createClass({
 
 module.exports = IndexText;
 
-},{"react":217}],225:[function(require,module,exports){
+},{"react":217}],226:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -24815,7 +24967,7 @@ var Item = React.createClass({
 
 module.exports = Item;
 
-},{"react":217}],226:[function(require,module,exports){
+},{"react":217}],227:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
@@ -24927,7 +25079,7 @@ var Project = React.createClass({
 
 module.exports = Project;
 
-},{"./Projects.jsx":227,"./portfolio.json":228,"react":217}],227:[function(require,module,exports){
+},{"./Projects.jsx":228,"./portfolio.json":230,"react":217}],228:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
@@ -24958,7 +25110,7 @@ var Projects = React.createClass({
             React.createElement(
               'h2',
               null,
-              'Featured Project'
+              'Featured Projects'
             )
           ),
           React.createElement(
@@ -25074,7 +25226,75 @@ var Projects = React.createClass({
 
 module.exports = Projects;
 
-},{"./Item.jsx":225,"./portfolio.json":228,"react":217}],228:[function(require,module,exports){
+},{"./Item.jsx":226,"./portfolio.json":230,"react":217}],229:[function(require,module,exports){
+"use strict";
+
+var React = require('react');
+
+var Skills = React.createClass({
+  displayName: "Skills",
+  render: function render() {
+    return React.createElement(
+      "div",
+      { className: "writingwrapper" },
+      React.createElement(
+        "section",
+        { className: "featured" },
+        React.createElement(
+          "div",
+          { className: "textspace top" },
+          React.createElement(
+            "aside",
+            null,
+            React.createElement(
+              "h2",
+              null,
+              "Skills"
+            )
+          )
+        )
+      ),
+      React.createElement(
+        "section",
+        { className: "writinglist" },
+        React.createElement(
+          "div",
+          { className: "textspace" },
+          React.createElement(
+            "aside",
+            null,
+            React.createElement(
+              "h2",
+              null,
+              "Front-end Development"
+            )
+          ),
+          React.createElement(
+            "div",
+            null,
+            React.createElement(
+              "ul",
+              { className: "tablelist" },
+              React.createElement(
+                "li",
+                { key: 0 },
+                React.createElement(
+                  "b",
+                  { className: "label" },
+                  "React.js | JavaScript | HTML | CSS"
+                )
+              )
+            )
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = Skills;
+
+},{"react":217}],230:[function(require,module,exports){
 module.exports={
   "2016": [
     {
@@ -25231,7 +25451,7 @@ module.exports={
   ],
 };
 
-},{}],229:[function(require,module,exports){
+},{}],231:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
@@ -25240,4 +25460,4 @@ var ReactDOM = require('react-dom');
 var Routes = require('./Routes.jsx');
 ReactDOM.render(Routes, document.getElementById('main'));
 
-},{"./Routes.jsx":220,"react":217,"react-dom":51}]},{},[229]);
+},{"./Routes.jsx":220,"react":217,"react-dom":51}]},{},[231]);

@@ -19,7 +19,7 @@ const Skills = React.createClass({
           <div>
             <ul className="tablelist">
               <li key={0}>
-                <b className="label">React.js</b>
+                <b className="label">React.js | JavaScript | HTML | CSS</b>
               </li>
             </ul>
           </div>
