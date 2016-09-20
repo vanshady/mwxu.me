@@ -15,7 +15,7 @@ const Projects = React.createClass({
         <section className="featured">
           <div className="textspace top">
             <aside>
-              <h2>Featured Project</h2>
+              <h2>Featured Projects</h2>
             </aside>
             <div className="grid">
               <div style={{ width: '200%', paddingLeft: '9px' }}>
