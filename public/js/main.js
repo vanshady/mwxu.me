@@ -24988,6 +24988,25 @@ var Projects = React.createClass({
               null,
               React.createElement(
                 'a',
+                { href: '/projects/2016-AllCommunication' },
+                React.createElement('img', { src: '/img/AllCommunication.png', className: 'fullimg' }),
+                React.createElement(
+                  'b',
+                  { className: 'label' },
+                  'AllCommunication'
+                ),
+                React.createElement(
+                  'em',
+                  { className: 'detail' },
+                  '2016'
+                )
+              )
+            ),
+            React.createElement(
+              'div',
+              null,
+              React.createElement(
+                'a',
                 { href: '/projects/2016-Realtime Chat Application' },
                 React.createElement('img', { src: '/img/chat.png', className: 'fullimg' }),
                 React.createElement(
@@ -25039,25 +25058,6 @@ var Projects = React.createClass({
                   '2016'
                 )
               )
-            ),
-            React.createElement(
-              'div',
-              null,
-              React.createElement(
-                'a',
-                { href: '/projects/2016-React Calculator' },
-                React.createElement('img', { src: '/img/calculator.png', className: 'fullimg' }),
-                React.createElement(
-                  'b',
-                  { className: 'label' },
-                  'React Calculator'
-                ),
-                React.createElement(
-                  'em',
-                  { className: 'detail' },
-                  '2016'
-                )
-              )
             )
           )
         )
@@ -25077,6 +25077,16 @@ module.exports = Projects;
 },{"./Item.jsx":225,"./portfolio.json":228,"react":217}],228:[function(require,module,exports){
 module.exports={
   "2016": [
+    {
+      "label": "AllCommunication",
+      "link": "https://all-communication.herokuapp.com",
+      "code": "https://github.com/vanshady/AllCommunication",
+      "img": "/img/AllCommunication.png",
+      "desc": [
+        "Bridging communication between deaf and non-deaf",
+      ],
+      "month": "Sep",
+    },
     {
       "label": "Jupyter-Autosklearn",
       "code": "https://github.com/vanshady/jupyter-sklearn",
