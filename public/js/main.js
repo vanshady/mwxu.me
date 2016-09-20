@@ -24734,7 +24734,11 @@ var Projects = React.createClass({
               React.createElement(
                 "a",
                 { href: "/projects/2016-AllCommunication" },
-                React.createElement("img", { src: "/img/AllCommunication.png", className: "fullimg" }),
+                React.createElement(
+                  "span",
+                  { style: { height: '40px' } },
+                  React.createElement("img", { src: "/img/AllCommunication.png", className: "fullimg" })
+                ),
                 React.createElement(
                   "b",
                   { className: "label" },
@@ -24749,7 +24753,7 @@ var Projects = React.createClass({
             ),
             React.createElement(
               "div",
-              null,
+              { style: { position: 'relative', left: '10px' } },
               React.createElement(
                 "a",
                 { href: "/projects/2016-Realtime Chat Application" },
@@ -24787,7 +24791,7 @@ var Projects = React.createClass({
             ),
             React.createElement(
               "div",
-              null,
+              { style: { position: 'relative', left: '10px' } },
               React.createElement(
                 "a",
                 { href: "/projects/2016-Eventbrite Data Visualization" },
