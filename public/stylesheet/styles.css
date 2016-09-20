@@ -64,7 +64,7 @@ figure.limit img { max-width: 25rem; margin-left: auto; margin-right: auto; }
 Type
 ******************/
 
-a { color: gray; }
+a { color: #222; }
 a:hover { color: crimson; }
 p a { text-decoration: none; border-bottom: 1px solid #bbb; }
 p a:hover { border-bottom-color: crimson; }

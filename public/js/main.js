@@ -25270,7 +25270,7 @@ var Skills = React.createClass({
             React.createElement(
               "h2",
               null,
-              "Front-end Development"
+              "Web Development"
             )
           ),
           React.createElement(
@@ -25283,9 +25283,231 @@ var Skills = React.createClass({
                 "li",
                 { key: 0 },
                 React.createElement(
-                  "b",
+                  "a",
                   { className: "label" },
-                  "React.js | JavaScript | HTML | CSS"
+                  "1+ year experience"
+                )
+              )
+            )
+          )
+        ),
+        React.createElement(
+          "div",
+          { className: "textspace" },
+          React.createElement(
+            "aside",
+            null,
+            React.createElement(
+              "h2",
+              null,
+              "Software Engineering"
+            )
+          ),
+          React.createElement(
+            "div",
+            null,
+            React.createElement(
+              "ul",
+              { className: "tablelist" },
+              React.createElement(
+                "li",
+                { key: 0 },
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "Extensive experience with Java, C and C++"
+                )
+              )
+            )
+          )
+        ),
+        React.createElement(
+          "div",
+          { className: "textspace" },
+          React.createElement(
+            "aside",
+            null,
+            React.createElement(
+              "h2",
+              null,
+              "Data Science"
+            )
+          ),
+          React.createElement(
+            "div",
+            null,
+            React.createElement(
+              "ul",
+              { className: "tablelist" },
+              React.createElement(
+                "li",
+                { key: 0 },
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "Conducted researches about data visualization at Shanghai Jiao Tong University and UC Davis"
+                )
+              ),
+              React.createElement(
+                "li",
+                { key: 1 },
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "Completed Andrew Ng's Macine Learning Course"
+                )
+              )
+            )
+          )
+        ),
+        React.createElement(
+          "div",
+          { className: "textspace" },
+          React.createElement(
+            "aside",
+            null,
+            React.createElement(
+              "h2",
+              null,
+              "Competitive Programming"
+            )
+          ),
+          React.createElement(
+            "div",
+            null,
+            React.createElement(
+              "ul",
+              { className: "tablelist" },
+              React.createElement(
+                "li",
+                { key: 0 },
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "10+ year experience"
+                )
+              ),
+              React.createElement(
+                "li",
+                { key: 1 },
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "Division 1 Honorable Mention | 2015 ACM-ICPC Pacific Northwest Region"
+                )
+              ),
+              React.createElement(
+                "li",
+                { key: 2 },
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "1st/80 | 2015 UC Davis Algorithm Hackathon"
+                )
+              )
+            )
+          )
+        ),
+        React.createElement(
+          "div",
+          { className: "textspace" },
+          React.createElement(
+            "aside",
+            null,
+            React.createElement(
+              "h2",
+              null,
+              "Hackathons"
+            )
+          ),
+          React.createElement(
+            "div",
+            null,
+            React.createElement(
+              "ul",
+              { className: "tablelist" },
+              React.createElement(
+                "li",
+                { key: 0 },
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "PennApps"
+                )
+              ),
+              React.createElement(
+                "li",
+                { key: 1 },
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "HackDavis"
+                )
+              ),
+              React.createElement(
+                "li",
+                { key: 2 },
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "HackingEDU"
+                )
+              )
+            )
+          )
+        ),
+        React.createElement(
+          "div",
+          { className: "textspace" },
+          React.createElement(
+            "aside",
+            null,
+            React.createElement(
+              "h2",
+              null,
+              "Open Source Contributions"
+            )
+          ),
+          React.createElement(
+            "div",
+            null,
+            React.createElement(
+              "ul",
+              { className: "tablelist" },
+              React.createElement(
+                "li",
+                { key: 0 },
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "angle-to-degree"
+                )
+              ),
+              React.createElement(
+                "li",
+                { key: 1 },
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "Hackathon-starter"
+                )
+              ),
+              React.createElement(
+                "li",
+                { key: 2 },
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "D3.js"
+                )
+              ),
+              React.createElement(
+                "li",
+                { key: 3 },
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "React.js"
                 )
               )
             )
