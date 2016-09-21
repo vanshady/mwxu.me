@@ -25251,8 +25251,8 @@ var Skills = React.createClass({
             "aside",
             null,
             React.createElement(
-              "h2",
-              null,
+              "h1",
+              { style: { fontSize: '20px', left: '2px' } },
               "Skills"
             )
           )
@@ -25286,6 +25286,11 @@ var Skills = React.createClass({
                   "a",
                   { className: "label" },
                   "1+ year experience"
+                ),
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "Extensive experience with React.js, Redux, react-router, GraphQL, D3.js and Express"
                 )
               )
             )
@@ -25315,7 +25320,7 @@ var Skills = React.createClass({
                 React.createElement(
                   "a",
                   { className: "label" },
-                  "Extensive experience with Java, C and C++"
+                  "Familiar experience with Java, C and C++. Have experience developing with Python, R, and Matlab. Familiar with Linux/Unix commands."
                 )
               )
             )
@@ -25346,11 +25351,7 @@ var Skills = React.createClass({
                   "a",
                   { className: "label" },
                   "Conducted researches about data visualization at Shanghai Jiao Tong University and UC Davis"
-                )
-              ),
-              React.createElement(
-                "li",
-                { key: 1 },
+                ),
                 React.createElement(
                   "a",
                   { className: "label" },
@@ -25385,20 +25386,12 @@ var Skills = React.createClass({
                   "a",
                   { className: "label" },
                   "10+ year experience"
-                )
-              ),
-              React.createElement(
-                "li",
-                { key: 1 },
+                ),
                 React.createElement(
                   "a",
                   { className: "label" },
                   "Division 1 Honorable Mention | 2015 ACM-ICPC Pacific Northwest Region"
-                )
-              ),
-              React.createElement(
-                "li",
-                { key: 2 },
+                ),
                 React.createElement(
                   "a",
                   { className: "label" },
@@ -25433,20 +25426,12 @@ var Skills = React.createClass({
                   "a",
                   { className: "label" },
                   "PennApps"
-                )
-              ),
-              React.createElement(
-                "li",
-                { key: 1 },
+                ),
                 React.createElement(
                   "a",
                   { className: "label" },
                   "HackDavis"
-                )
-              ),
-              React.createElement(
-                "li",
-                { key: 2 },
+                ),
                 React.createElement(
                   "a",
                   { className: "label" },
@@ -25480,7 +25465,12 @@ var Skills = React.createClass({
                 React.createElement(
                   "a",
                   { className: "label" },
-                  "angle-to-degree"
+                  "angle-to-degree | Author"
+                ),
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "An npm package with 1800+ downloads."
                 )
               ),
               React.createElement(
@@ -25489,7 +25479,12 @@ var Skills = React.createClass({
                 React.createElement(
                   "a",
                   { className: "label" },
-                  "Hackathon-starter"
+                  "Hackathon-starter | Major Contributor"
+                ),
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "A boilerplate for Node.js web applications with 16000+ stars."
                 )
               ),
               React.createElement(
@@ -25498,16 +25493,7 @@ var Skills = React.createClass({
                 React.createElement(
                   "a",
                   { className: "label" },
-                  "D3.js"
-                )
-              ),
-              React.createElement(
-                "li",
-                { key: 3 },
-                React.createElement(
-                  "a",
-                  { className: "label" },
-                  "React.js"
+                  "D3.js, React.js | Contributor"
                 )
               )
             )

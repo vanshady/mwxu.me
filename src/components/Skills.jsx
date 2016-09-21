@@ -7,7 +7,7 @@ const Skills = React.createClass({
         <section className="featured">
           <div className="textspace top">
             <aside>
-              <h2>Skills</h2>
+              <h1 style={{ fontSize: '20px', left: '2px' }}>Skills</h1>
             </aside>
           </div>
         </section>
@@ -21,19 +21,21 @@ const Skills = React.createClass({
               <ul className="tablelist">
                 <li key={0}>
                   <a className="label">1+ year experience</a>
+                  <a className="label">Extensive experience with React.js, Redux, react-router, GraphQL, D3.js and
+Express</a>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="textspace">            
+          <div className="textspace">
             <aside>
               <h2>Software Engineering</h2>
             </aside>
             <div>
               <ul className="tablelist">
                 <li key={0}>
-                  <a className="label">Extensive experience with Java, C and C++</a>
+                  <a className="label">Familiar experience with Java, C and C++. Have experience developing with Python, R, and Matlab. Familiar with Linux/Unix commands.</a>
                 </li>
               </ul>
             </div>
@@ -47,8 +49,6 @@ const Skills = React.createClass({
               <ul className="tablelist">
                 <li key={0}>
                   <a className="label">Conducted researches about data visualization at Shanghai Jiao Tong University and UC Davis</a>
-                </li>
-                <li key={1}>
                   <a className="label">Completed Andrew Ng's Macine Learning Course</a>
                 </li>
               </ul>
@@ -63,11 +63,7 @@ const Skills = React.createClass({
               <ul className="tablelist">
                 <li key={0}>
                   <a className="label">10+ year experience</a>
-                </li>
-                <li key={1}>
                   <a className="label">Division 1 Honorable Mention | 2015 ACM-ICPC Pacific Northwest Region</a>
-                </li>
-                <li key={2}>
                   <a className="label">1st/80 | 2015 UC Davis Algorithm Hackathon</a>
                 </li>
               </ul>
@@ -82,11 +78,7 @@ const Skills = React.createClass({
               <ul className="tablelist">
                 <li key={0}>
                   <a className="label">PennApps</a>
-                </li>
-                <li key={1}>
                   <a className="label">HackDavis</a>
-                </li>
-                <li key={2}>
                   <a className="label">HackingEDU</a>
                 </li>
               </ul>
@@ -100,16 +92,15 @@ const Skills = React.createClass({
             <div>
               <ul className="tablelist">
                 <li key={0}>
-                  <a className="label">angle-to-degree</a>
+                  <a className="label">angle-to-degree | Author</a>
+                  <a className="label">An npm package with 1800+ downloads.</a>
                 </li>
                 <li key={1}>
-                  <a className="label">Hackathon-starter</a>
+                  <a className="label">Hackathon-starter | Major Contributor</a>
+                  <a className="label">A boilerplate for Node.js web applications with 16000+ stars.</a>
                 </li>
                 <li key={2}>
-                  <a className="label">D3.js</a>
-                </li>
-                <li key={3}>
-                  <a className="label">React.js</a>
+                  <a className="label">D3.js, React.js | Contributor</a>
                 </li>
               </ul>
             </div>
