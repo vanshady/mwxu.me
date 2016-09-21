@@ -93,11 +93,11 @@ Express</a>
               <ul className="tablelist">
                 <li key={0}>
                   <a className="label">angle-to-degree | Author</a>
-                  <a className="label">An npm package with 1800+ downloads.</a>
+                  <b className="label">An npm package with 1800+ downloads.</b>
                 </li>
                 <li key={1}>
                   <a className="label">Hackathon-starter | Major Contributor</a>
-                  <a className="label">A boilerplate for Node.js web applications with 16000+ stars.</a>
+                  <b className="label">A boilerplate for Node.js web applications with 16000+ stars.</b>
                 </li>
                 <li key={2}>
                   <a className="label">D3.js, React.js | Contributor</a>

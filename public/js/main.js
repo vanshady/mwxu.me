@@ -25468,7 +25468,7 @@ var Skills = React.createClass({
                   "angle-to-degree | Author"
                 ),
                 React.createElement(
-                  "a",
+                  "b",
                   { className: "label" },
                   "An npm package with 1800+ downloads."
                 )
@@ -25482,7 +25482,7 @@ var Skills = React.createClass({
                   "Hackathon-starter | Major Contributor"
                 ),
                 React.createElement(
-                  "a",
+                  "b",
                   { className: "label" },
                   "A boilerplate for Node.js web applications with 16000+ stars."
                 )
