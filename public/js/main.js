@@ -24708,7 +24708,7 @@ var Projects = React.createClass({
           { className: "grid" },
           React.createElement(
             "div",
-            { style: { width: '200%', paddingLeft: '9px' } },
+            { style: { width: '99%', paddingLeft: '9px' } },
             React.createElement(
               "a",
               { href: "/projects/2016-Orgo Savior" },
@@ -24727,7 +24727,7 @@ var Projects = React.createClass({
           ),
           React.createElement(
             "div",
-            { style: { width: '200%', paddingLeft: '9px' } },
+            { style: { width: '99%', paddingLeft: '9px' } },
             React.createElement(
               "a",
               { href: "/projects/2015-Living Liquid" },

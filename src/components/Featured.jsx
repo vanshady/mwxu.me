@@ -9,14 +9,14 @@ const Projects = React.createClass({
             <h2>Featured Projects</h2>
           </aside>
           <div className="grid">
-            <div style={{ width: '200%', paddingLeft: '9px' }}>
+            <div style={{ width: '99%', paddingLeft: '9px' }}>
               <a href="/projects/2016-Orgo Savior">
                 <iframe width="100%" height="300" title="Orgo Savior" src="https://www.youtube.com/embed/8Clj6ftfLfk" frameBorder="0" allowFullScreen></iframe>
                 <b className="label">Orgo Savior</b>
                 <em className="detail">2016</em>
               </a>
             </div>
-            <div style={{ width: '200%', paddingLeft: '9px' }}>
+            <div style={{ width: '99%', paddingLeft: '9px' }}>
               <a href="/projects/2015-Living Liquid">
                 <iframe width="100%" height="300" title="Living Liquid" src="https://www.youtube.com/embed/9xNOjb1kUio" frameBorder="0" allowFullScreen></iframe>
                 <b className="label">Living Liquid</b>
