@@ -12,7 +12,9 @@ const About = React.createClass({
         <p> <img src="/img/avatar.jpg" alt="avatar" className="fullimg avatar" /> </p>
         <section className="text">
           <p>
-            I'm Minwei Xu 徐旻威. I was born and grew up in Shanghai, China. Now, I'm a Sophomore at Johns Hopkins University. Full-stack developer with dabbling in data science and data visualization. Passionate about programming and devoted to open-source projects. Extensive experience with React.js, Redux, react-router, GraphQL, D3.js and Express. Familiar with Python, C++, Node.js, R and Linux and Git commands.
+             I'm Minwei Xu 徐旻威. I was born and grew up in Shanghai, China. Now, I'm a sophomore at Johns Hopkins University.
+             I'm a web developer with experience in front-end and dabbling in data science. I'm passionate about programming and devoted to open-source projects.
+             I have Extensive experience with React.js, Redux, react-router, GraphQL, D3.js. Familiar with Java, C/C++, Python, Node.js, iOS Development, and Linux commands.
           </p>
           <hr />
           <h1>Programmer</h1>

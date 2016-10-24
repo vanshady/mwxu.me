@@ -3,7 +3,7 @@ const React = require('react');
 const Skills = React.createClass({
   render() {
     return (
-      <div className="writingwrapper">
+      <div>
         <section className="featured">
           <div className="textspace top">
             <aside>

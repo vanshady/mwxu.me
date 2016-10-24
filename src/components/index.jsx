@@ -12,8 +12,10 @@ const Index = React.createClass({
     return (
       <div>
         <IndexText />
-        <Featured />
-        <Skills />
+        <div className="writingwrapper">
+          <Featured />
+          <Skills />
+        </div>
       </div>
     );
   },

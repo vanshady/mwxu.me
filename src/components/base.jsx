@@ -24,7 +24,7 @@ const Base = React.createClass({
           <section className="footersection">
             <div className="title">
               <h2>Minwei Xu</h2>
-              Full Stack Developer
+              Website developed by React and Express.
             </div>
             <div className="copyline">
               <a href="mailto:mxu31@jhu.edu">mxu31@jhu.edu</a>&nbsp; · &nbsp;
