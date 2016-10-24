@@ -77,6 +77,7 @@ Express</a>
             <div>
               <ul className="tablelist">
                 <li key={0}>
+                  <a className="label">HopHacks</a>
                   <a className="label">PennApps</a>
                   <a className="label">HackDavis</a>
                   <a className="label">HackingEDU</a>
@@ -104,6 +105,7 @@ Express</a>
                 </li>
               </ul>
             </div>
+
           </div>
         </section>
       </div>
