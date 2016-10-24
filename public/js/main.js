@@ -24433,7 +24433,7 @@ var About = React.createClass({
         React.createElement(
           'p',
           null,
-          'I\'m Minwei Xu 徐旻威. I was born and grew up in Shanghai, China. Now, I\'m a Sophomore at Johns Hopkins University. Full-stack developer with dabbling in data science and data visualization. Passionate about programming and devoted to open-source projects. Extensive experience with React.js, Redux, react-router, GraphQL, D3.js and Express. Familiar with Python, C++, Node.js, R and Linux and Git commands.'
+          'I\'m Minwei Xu 徐旻威. I was born and grew up in Shanghai, China. Now, I\'m a sophomore at Johns Hopkins University. I\'m a web developer with experience in front-end and dabbling in data science. I\'m passionate about programming and devoted to open-source projects. I have Extensive experience with React.js, Redux, react-router, GraphQL, D3.js. Familiar with Java, C/C++, Python, Node.js, iOS Development, and Linux commands.'
         ),
         React.createElement('hr', null),
         React.createElement(
@@ -24643,7 +24643,7 @@ var Base = React.createClass({
               null,
               "Minwei Xu"
             ),
-            "Full Stack Developer"
+            "Website developed by React and Express."
           ),
           React.createElement(
             "div",
@@ -24689,123 +24689,138 @@ var Projects = React.createClass({
   displayName: "Projects",
   render: function render() {
     return React.createElement(
-      "div",
-      { className: "writingwrapper" },
+      "section",
+      { className: "featured" },
       React.createElement(
-        "section",
-        { className: "featured" },
+        "div",
+        { className: "textspace top" },
+        React.createElement(
+          "aside",
+          null,
+          React.createElement(
+            "h2",
+            null,
+            "Featured Projects"
+          )
+        ),
         React.createElement(
           "div",
-          { className: "textspace top" },
+          { className: "grid" },
           React.createElement(
-            "aside",
-            null,
+            "div",
+            { style: { width: '200%', paddingLeft: '9px' } },
             React.createElement(
-              "h2",
-              null,
-              "Featured Projects"
+              "a",
+              { href: "/projects/2016-Orgo Savior" },
+              React.createElement("iframe", { width: "100%", height: "300", title: "Orgo Savior", src: "https://www.youtube.com/embed/8Clj6ftfLfk", frameBorder: "0", allowFullScreen: true }),
+              React.createElement(
+                "b",
+                { className: "label" },
+                "Orgo Savior"
+              ),
+              React.createElement(
+                "em",
+                { className: "detail" },
+                "2016"
+              )
             )
           ),
           React.createElement(
             "div",
-            { className: "grid" },
+            { style: { width: '200%', paddingLeft: '9px' } },
             React.createElement(
-              "div",
-              { style: { width: '200%', paddingLeft: '9px' } },
+              "a",
+              { href: "/projects/2015-Living Liquid" },
+              React.createElement("iframe", { width: "100%", height: "300", title: "Living Liquid", src: "https://www.youtube.com/embed/9xNOjb1kUio", frameBorder: "0", allowFullScreen: true }),
               React.createElement(
-                "a",
-                { href: "/projects/2015-Living Liquid" },
-                React.createElement("iframe", { width: "100%", height: "300", title: "Living Liquid", src: "https://www.youtube.com/embed/9xNOjb1kUio", frameBorder: "0", allowFullScreen: true }),
-                React.createElement(
-                  "b",
-                  { className: "label" },
-                  "Living Liquid"
-                ),
-                React.createElement(
-                  "em",
-                  { className: "detail" },
-                  "2015"
-                )
+                "b",
+                { className: "label" },
+                "Living Liquid"
+              ),
+              React.createElement(
+                "em",
+                { className: "detail" },
+                "2015"
               )
-            ),
+            )
+          ),
+          React.createElement(
+            "div",
+            null,
             React.createElement(
-              "div",
-              null,
+              "a",
+              { href: "/projects/2016-AllCommunication" },
               React.createElement(
-                "a",
-                { href: "/projects/2016-AllCommunication" },
-                React.createElement(
-                  "span",
-                  { style: { height: '40px' } },
-                  React.createElement("img", { src: "/img/AllCommunication.png", className: "fullimg" })
-                ),
-                React.createElement(
-                  "b",
-                  { className: "label" },
-                  "AllCommunication"
-                ),
-                React.createElement(
-                  "em",
-                  { className: "detail" },
-                  "2016"
-                )
+                "span",
+                { style: { height: '40px' } },
+                React.createElement("img", { src: "/img/AllCommunication.png", className: "fullimg" })
+              ),
+              React.createElement(
+                "b",
+                { className: "label" },
+                "AllCommunication"
+              ),
+              React.createElement(
+                "em",
+                { className: "detail" },
+                "2016"
               )
-            ),
+            )
+          ),
+          React.createElement(
+            "div",
+            { style: { position: 'relative', left: '10px' } },
             React.createElement(
-              "div",
-              { style: { position: 'relative', left: '10px' } },
+              "a",
+              { href: "/projects/2016-Realtime Chat Application" },
+              React.createElement("img", { src: "/img/chat.png", className: "fullimg" }),
               React.createElement(
-                "a",
-                { href: "/projects/2016-Realtime Chat Application" },
-                React.createElement("img", { src: "/img/chat.png", className: "fullimg" }),
-                React.createElement(
-                  "b",
-                  { className: "label" },
-                  "Realtime Chat Application"
-                ),
-                React.createElement(
-                  "em",
-                  { className: "detail" },
-                  "2016"
-                )
+                "b",
+                { className: "label" },
+                "Realtime Chat Application"
+              ),
+              React.createElement(
+                "em",
+                { className: "detail" },
+                "2016"
               )
-            ),
+            )
+          ),
+          React.createElement(
+            "div",
+            null,
             React.createElement(
-              "div",
-              null,
+              "a",
+              { href: "/projects/2016-SiliconHacks" },
+              React.createElement("img", { src: "/img/silicon.png", className: "fullimg" }),
               React.createElement(
-                "a",
-                { href: "/projects/2016-SiliconHacks" },
-                React.createElement("img", { src: "/img/silicon.png", className: "fullimg" }),
-                React.createElement(
-                  "b",
-                  { className: "label" },
-                  "SiliconHacks"
-                ),
-                React.createElement(
-                  "em",
-                  { className: "detail" },
-                  "2016"
-                )
+                "b",
+                { className: "label" },
+                "SiliconHacks"
+              ),
+              React.createElement(
+                "em",
+                { className: "detail" },
+                "2016"
               )
-            ),
+            )
+          ),
+          React.createElement(
+            "div",
+            { style: { position: 'relative', left: '10px' } },
             React.createElement(
-              "div",
-              { style: { position: 'relative', left: '10px' } },
+              "a",
+              { href: "/projects/2016-Eventbrite Data Visualization" },
+              React.createElement("img", { src: "/img/GMapFull.png", className: "fullimg" }),
               React.createElement(
-                "a",
-                { href: "/projects/2016-Eventbrite Data Visualization" },
-                React.createElement("img", { src: "/img/GMapFull.png", className: "fullimg" }),
-                React.createElement(
-                  "b",
-                  { className: "label" },
-                  "Eventbrite Data Visualization"
-                ),
-                React.createElement(
-                  "em",
-                  { className: "detail" },
-                  "2016"
-                )
+                "b",
+                { className: "label" },
+                "Eventbrite Data Visualization"
+              ),
+              React.createElement(
+                "em",
+                { className: "detail" },
+                "2016"
               )
             )
           )
@@ -24836,8 +24851,12 @@ var Index = React.createClass({
       'div',
       null,
       React.createElement(IndexText, null),
-      React.createElement(Featured, null),
-      React.createElement(Skills, null)
+      React.createElement(
+        'div',
+        { className: 'writingwrapper' },
+        React.createElement(Featured, null),
+        React.createElement(Skills, null)
+      )
     );
   }
 });
@@ -24865,7 +24884,7 @@ var IndexText = React.createClass({
       React.createElement(
         "p",
         { className: "intro" },
-        "I’m Minwei Xu 徐旻威, a full-stack developer",
+        "I’m Minwei Xu 徐旻威, a web developer",
         React.createElement("br", null),
         "and a sophomore at JHU.",
         React.createElement("br", null),
@@ -25088,7 +25107,7 @@ module.exports = Project;
 
 var React = require('react');
 var Item = require('./Item.jsx');
-
+var Featured = require('./Featured.jsx');
 var list = require('./portfolio.json');
 
 var Projects = React.createClass({
@@ -25102,122 +25121,7 @@ var Projects = React.createClass({
     return React.createElement(
       'div',
       { className: 'writingwrapper' },
-      React.createElement(
-        'section',
-        { className: 'featured' },
-        React.createElement(
-          'div',
-          { className: 'textspace top' },
-          React.createElement(
-            'aside',
-            null,
-            React.createElement(
-              'h2',
-              null,
-              'Featured Projects'
-            )
-          ),
-          React.createElement(
-            'div',
-            { className: 'grid' },
-            React.createElement(
-              'div',
-              { style: { width: '200%', paddingLeft: '9px' } },
-              React.createElement(
-                'a',
-                { href: '/projects/2015-Living Liquid' },
-                React.createElement('iframe', { width: '100%', height: '300', title: 'Living Liquid', src: 'https://www.youtube.com/embed/9xNOjb1kUio', frameBorder: '0', allowFullScreen: true }),
-                React.createElement(
-                  'b',
-                  { className: 'label' },
-                  'Living Liquid'
-                ),
-                React.createElement(
-                  'em',
-                  { className: 'detail' },
-                  '2015'
-                )
-              )
-            ),
-            React.createElement(
-              'div',
-              null,
-              React.createElement(
-                'a',
-                { href: '/projects/2016-AllCommunication' },
-                React.createElement('img', { src: '/img/AllCommunication.png', className: 'fullimg' }),
-                React.createElement(
-                  'b',
-                  { className: 'label' },
-                  'AllCommunication'
-                ),
-                React.createElement(
-                  'em',
-                  { className: 'detail' },
-                  '2016'
-                )
-              )
-            ),
-            React.createElement(
-              'div',
-              null,
-              React.createElement(
-                'a',
-                { href: '/projects/2016-Realtime Chat Application' },
-                React.createElement('img', { src: '/img/chat.png', className: 'fullimg' }),
-                React.createElement(
-                  'b',
-                  { className: 'label' },
-                  'Realtime Chat Application'
-                ),
-                React.createElement(
-                  'em',
-                  { className: 'detail' },
-                  '2016'
-                )
-              )
-            ),
-            React.createElement(
-              'div',
-              null,
-              React.createElement(
-                'a',
-                { href: '/projects/2016-SiliconHacks' },
-                React.createElement('img', { src: '/img/silicon.png', className: 'fullimg' }),
-                React.createElement(
-                  'b',
-                  { className: 'label' },
-                  'SiliconHacks'
-                ),
-                React.createElement(
-                  'em',
-                  { className: 'detail' },
-                  '2016'
-                )
-              )
-            ),
-            React.createElement(
-              'div',
-              null,
-              React.createElement(
-                'a',
-                { href: '/projects/2016-Eventbrite Data Visualization' },
-                React.createElement('img', { src: '/img/GMapFull.png', className: 'fullimg' }),
-                React.createElement(
-                  'b',
-                  { className: 'label' },
-                  'Eventbrite Data Visualization'
-                ),
-                React.createElement(
-                  'em',
-                  { className: 'detail' },
-                  '2016'
-                )
-              )
-            )
-          )
-        )
-      ),
+      React.createElement(Featured, null),
       React.createElement(
         'section',
         { className: 'writinglist' },
@@ -25230,7 +25134,7 @@ var Projects = React.createClass({
 
 module.exports = Projects;
 
-},{"./Item.jsx":226,"./portfolio.json":230,"react":217}],229:[function(require,module,exports){
+},{"./Featured.jsx":223,"./Item.jsx":226,"./portfolio.json":230,"react":217}],229:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -25240,7 +25144,7 @@ var Skills = React.createClass({
   render: function render() {
     return React.createElement(
       "div",
-      { className: "writingwrapper" },
+      null,
       React.createElement(
         "section",
         { className: "featured" },
@@ -25425,6 +25329,11 @@ var Skills = React.createClass({
                 React.createElement(
                   "a",
                   { className: "label" },
+                  "HopHacks"
+                ),
+                React.createElement(
+                  "a",
+                  { className: "label" },
                   "PennApps"
                 ),
                 React.createElement(
@@ -25509,6 +25418,15 @@ module.exports = Skills;
 },{"react":217}],230:[function(require,module,exports){
 module.exports={
   "2016": [
+    {
+      "label": "Orgo Savior",
+      "code": "https://github.com/vanshady/Orgo-Savior",
+      "img": "/img/orgosavior.jpg",
+      "desc": [
+        "An Augemented Reality iOS app for the 3D visualization of chemical molecules.",
+      ],
+      "month": "Oct",
+    },
     {
       "label": "AllCommunication",
       "link": "https://all-communication.herokuapp.com",
