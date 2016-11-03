@@ -24467,13 +24467,13 @@ var About = React.createClass({
           'I used D3.js to visualize the chemical analysis data of ',
           React.createElement(
             'a',
-            { href: 'http://wine.mwxu.me' },
+            { href: 'http://wine.minweixu.com' },
             'wine'
           ),
           ' and the customer survey data of a ',
           React.createElement(
             'a',
-            { href: 'http://hotel.mwxu.me' },
+            { href: 'http://hotel.minweixu.com' },
             'hotel'
           ),
           '.',
@@ -25455,7 +25455,7 @@ module.exports={
     },
     {
       "label": "Realtime Chat Application",
-      "link": "http://chat.mwxu.me",
+      "link": "http://chat.minweixu.com",
       "img": "/img/chat.png",
       "desc": [
         "This is a realtime chat app developed by express, socket.io, React, Bootstrap, and MongoDB."
@@ -25483,7 +25483,7 @@ module.exports={
     },
     {
       "label": "Smiley Face Force Layout with D3",
-      "link": "http://smiley.mwxu.me",
+      "link": "http://smiley.minweixu.com",
       "code": "https://github.com/vanshady/smiley/",
       "desc": [
         "A little demo for fun"
@@ -25502,7 +25502,7 @@ module.exports={
     },
     {
       "label": "React Calculator",
-      "link": "http://calculator.mwxu.me",
+      "link": "http://calculator.minweixu.com",
       "code": "https://github.com/vanshady/react-calculator/",
       "img": "/img/calculator.png",
       "desc": [
@@ -25533,7 +25533,7 @@ module.exports={
     },
     {
       "label": "Neuroscience Data Visualisation",
-      "link": "http://roi.mwxu.me",
+      "link": "http://roi.minweixu.com",
       "desc": [
         "A research project conducted at UC Davis",
         "We used D3.js to visualize the relationship between different regions of interests in a brain"
@@ -25551,16 +25551,16 @@ module.exports={
     },
     {
       "label": "An Elastic Ball Made by D3.js",
-      "link": "http://ball.mwxu.me",
+      "link": "http://ball.minweixu.com",
       "desc": [
-        "<iframe src='http://ball.mwxu.me' frameBorder=0 marginwidth=0 marginheight=0 scrolling=no style='width:550px;height:300px;' width=550 height=300 ALLOWTRANSPARENCY='true'></iframe>",
+        "<iframe src='http://ball.minweixu.com' frameBorder=0 marginwidth=0 marginheight=0 scrolling=no style='width:550px;height:300px;' width=550 height=300 ALLOWTRANSPARENCY='true'></iframe>",
         "An Elastic Ball Made by D3.js"
       ],
       "month": "Oct",
     },
     {
       "label": "Data Visualisation of Wine",
-      "link": "http://wine.mwxu.me",
+      "link": "http://wine.minweixu.com",
       "code": "https://github.com/vanshady/wine/",
       "img": "/img/wine-screenshot.png",
       "desc": [
@@ -25570,7 +25570,7 @@ module.exports={
     },
     {
       "label": "Data Visualisation of Hotel",
-      "link": "http://hotel.mwxu.me",
+      "link": "http://hotel.minweixu.com",
       "code": "https://github.com/vanshady/wine/",
       "img": "/img/wine-screenshot.png",
       "desc": [
