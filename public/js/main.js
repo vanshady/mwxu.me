@@ -25379,7 +25379,7 @@ var Skills = React.createClass({
                 React.createElement(
                   "b",
                   { className: "label" },
-                  "An npm package with 1800+ downloads."
+                  "An npm package with 2200+ downloads."
                 )
               ),
               React.createElement(
@@ -25393,7 +25393,7 @@ var Skills = React.createClass({
                 React.createElement(
                   "b",
                   { className: "label" },
-                  "A boilerplate for Node.js web applications with 16000+ stars."
+                  "A boilerplate for Node.js web applications with 17000+ stars."
                 )
               ),
               React.createElement(
@@ -25515,7 +25515,7 @@ module.exports={
       "link": "https://www.npmjs.com/package/angle-to-direction/",
       "desc": [
         "This npm package can convert angle to direction.",
-        "1435 downloads in all."
+        "2200 download."
       ],
       "month": "Jan",
     },
