@@ -25335,23 +25335,38 @@ var Skills = React.createClass({
                 { key: 0 },
                 React.createElement(
                   "a",
-                  { className: "label" },
-                  "HopHacks"
+                  { href: "/projects/2016-Orgo Savior", lassName: "label" },
+                  "HopHacks | Orgo Savior",
+                  React.createElement(
+                    "b",
+                    { className: "label" },
+                    "3rd Prize"
+                  )
+                ),
+                React.createElement(
+                  "a",
+                  { className: "label", href: "/projects/2016-AllCommunication" },
+                  "PennApps | AllCommunication"
                 ),
                 React.createElement(
                   "a",
                   { className: "label" },
-                  "PennApps"
+                  "HackDavis | Chrome Voice Assist",
+                  React.createElement(
+                    "b",
+                    { className: "label" },
+                    "Most Innovative Hack | Best UX With Amazon Alexa"
+                  )
                 ),
                 React.createElement(
                   "a",
-                  { className: "label" },
-                  "HackDavis"
-                ),
-                React.createElement(
-                  "a",
-                  { className: "label" },
-                  "HackingEDU"
+                  { className: "label", href: "/projects/2015-SpeechHacks" },
+                  "HackingEDU | SpeechHacks",
+                  React.createElement(
+                    "b",
+                    { className: "label" },
+                    "Best Collaboration Hack Using Moxtra"
+                  )
                 )
               )
             )
@@ -25381,12 +25396,12 @@ var Skills = React.createClass({
                 React.createElement(
                   "a",
                   { className: "label" },
-                  "angle-to-degree | Author"
-                ),
-                React.createElement(
-                  "b",
-                  { className: "label" },
-                  "An npm package with 2200+ downloads."
+                  "angle-to-degree | Author",
+                  React.createElement(
+                    "b",
+                    { className: "label" },
+                    "An npm package with 2200+ downloads."
+                  )
                 )
               ),
               React.createElement(
@@ -25395,12 +25410,12 @@ var Skills = React.createClass({
                 React.createElement(
                   "a",
                   { className: "label" },
-                  "Hackathon-starter | Major Contributor"
-                ),
-                React.createElement(
-                  "b",
-                  { className: "label" },
-                  "A boilerplate for Node.js web applications with 17000+ stars."
+                  "Hackathon-starter | Major Contributor",
+                  React.createElement(
+                    "b",
+                    { className: "label" },
+                    "A boilerplate for Node.js web applications with 17000+ stars."
+                  )
                 )
               ),
               React.createElement(
