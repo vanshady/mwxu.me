@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Minwei Xu's personal website.",
   "main": "server.js",
+  "engines": {
+    "node": "v6.9.1"
+  },
   "scripts": {
     "start": "nodemon server.js",
     "watch": "",
