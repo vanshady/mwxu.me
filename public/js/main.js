@@ -25301,12 +25301,32 @@ var Skills = React.createClass({
                 React.createElement(
                   "a",
                   { className: "label" },
-                  "Division 1 Honorable Mention | 2015 ACM-ICPC Pacific Northwest Region"
+                  "2016 ACM-ICPC Mid-Atlantic Region",
+                  React.createElement(
+                    "b",
+                    { className: "sublabel" },
+                    "Honorable Mention"
+                  )
                 ),
                 React.createElement(
                   "a",
                   { className: "label" },
-                  "1st/80 | 2015 UC Davis Algorithm Hackathon"
+                  "2015 ACM-ICPC Pacific Northwest Region",
+                  React.createElement(
+                    "b",
+                    { className: "sublabel" },
+                    "Division 1 Honorable Mention"
+                  )
+                ),
+                React.createElement(
+                  "a",
+                  { className: "label" },
+                  "2015 UC Davis Algorithm Hackathon",
+                  React.createElement(
+                    "b",
+                    { className: "sublabel" },
+                    "1st / 80"
+                  )
                 )
               )
             )
@@ -25339,7 +25359,7 @@ var Skills = React.createClass({
                   "HopHacks | Orgo Savior",
                   React.createElement(
                     "b",
-                    { className: "label" },
+                    { className: "sublabel" },
                     "3rd Prize"
                   )
                 ),
@@ -25354,7 +25374,7 @@ var Skills = React.createClass({
                   "HackDavis | Chrome Voice Assist",
                   React.createElement(
                     "b",
-                    { className: "label" },
+                    { className: "sublabel" },
                     "Most Innovative Hack | Best UX With Amazon Alexa"
                   )
                 ),
@@ -25364,7 +25384,7 @@ var Skills = React.createClass({
                   "HackingEDU | SpeechHacks",
                   React.createElement(
                     "b",
-                    { className: "label" },
+                    { className: "sublabel" },
                     "Best Collaboration Hack Using Moxtra"
                   )
                 )
@@ -25395,11 +25415,11 @@ var Skills = React.createClass({
                 { key: 0 },
                 React.createElement(
                   "a",
-                  { className: "label" },
+                  { className: "label", href: "https://www.npmjs.com/package/angle-to-direction" },
                   "angle-to-degree | Author",
                   React.createElement(
                     "b",
-                    { className: "label" },
+                    { className: "sublabel" },
                     "An npm package with 2200+ downloads."
                   )
                 )
@@ -25409,12 +25429,12 @@ var Skills = React.createClass({
                 { key: 1 },
                 React.createElement(
                   "a",
-                  { className: "label" },
+                  { className: "label", href: "https://github.com/sahat/hackathon-starter" },
                   "Hackathon-starter | Major Contributor",
                   React.createElement(
                     "b",
-                    { className: "label" },
-                    "A boilerplate for Node.js web applications with 17000+ stars."
+                    { className: "sublabel" },
+                    "A boilerplate for Node.js app with 19k+ stars."
                   )
                 )
               ),

@@ -1,8 +1,8 @@
 const React = require('react');
 
 const Skills = React.createClass({
-    render() {
-        return (
+  render() {
+    return (
       <div>
         <section className="featured">
           <div className="textspace top">
@@ -65,9 +65,16 @@ const Skills = React.createClass({
               <ul className="tablelist">
                 <li key={0}>
                   <a className="label">10+ year experience</a>
-                  <a className="label">Division 1 Honorable Mention | 2015 ACM-ICPC Pacific
-                   Northwest Region</a>
-                  <a className="label">1st/80 | 2015 UC Davis Algorithm Hackathon</a>
+                  <a className="label">2016 ACM-ICPC Mid-Atlantic Region
+                      <b className="sublabel">Honorable Mention</b>
+                  </a>
+                  <a className="label">2015 ACM-ICPC Pacific
+                      Northwest Region
+                      <b className="sublabel">Division 1 Honorable Mention</b>
+                  </a>
+                  <a className="label">2015 UC Davis Algorithm Hackathon
+                    <b className="sublabel">1st / 80</b>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -81,20 +88,20 @@ const Skills = React.createClass({
               <ul className="tablelist">
                 <li key={0}>
                   <a href="/projects/2016-Orgo Savior" lassName="label">
-                      HopHacks | Orgo Savior
-                      <b className="label">3rd Prize</b>
+                    HopHacks | Orgo Savior
+                      <b className="sublabel">3rd Prize</b>
                   </a>
                   <a className="label" href="/projects/2016-AllCommunication">
-                      PennApps | AllCommunication
+                    PennApps | AllCommunication
                   </a>
                   <a className="label">
-                      HackDavis | Chrome Voice Assist
-                      <b className="label">Most Innovative Hack
+                    HackDavis | Chrome Voice Assist
+                      <b className="sublabel">Most Innovative Hack
                       | Best UX With Amazon Alexa</b>
                   </a>
                   <a className="label" href="/projects/2015-SpeechHacks">
-                      HackingEDU | SpeechHacks
-                      <b className="label">Best Collaboration Hack Using Moxtra</b>
+                    HackingEDU | SpeechHacks
+                      <b className="sublabel">Best Collaboration Hack Using Moxtra</b>
                   </a>
                 </li>
               </ul>
@@ -108,13 +115,16 @@ const Skills = React.createClass({
             <div>
               <ul className="tablelist">
                 <li key={0}>
-                  <a className="label">angle-to-degree | Author
-                  <b className="label">An npm package with 2200+ downloads.</b></a>
+                  <a className="label" href="https://www.npmjs.com/package/angle-to-direction">
+                      angle-to-degree | Author
+                      <b className="sublabel">An npm package with 2200+ downloads.</b>
+                  </a>
                 </li>
                 <li key={1}>
-                  <a className="label">Hackathon-starter | Major Contributor
-                  <b className="label">A boilerplate for Node.js web applications with 17000+
-                   stars.</b></a>
+                  <a className="label" href="https://github.com/sahat/hackathon-starter">Hackathon-starter | Major Contributor
+                      <b className="sublabel">A boilerplate for Node.js app with 19k+
+                      stars.</b>
+                  </a>
                 </li>
                 <li key={2}>
                   <a className="label">D3.js, React.js | Contributor</a>
@@ -126,7 +136,7 @@ const Skills = React.createClass({
         </section>
       </div>
     );
-    },
+  },
 });
 
 module.exports = Skills;
