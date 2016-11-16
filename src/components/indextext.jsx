@@ -1,8 +1,8 @@
 const React = require('react');
 
 const IndexText = React.createClass({
-  render() {
-    return (
+    render() {
+        return (
       <section className="text">
         <p> <img src="/img/avatar.jpg" alt="avatar" className="fullimg avatar" /> </p>
         <p className="intro">
@@ -28,7 +28,7 @@ const IndexText = React.createClass({
         </p>
       </section>
     );
-  },
+    },
 });
 
 module.exports = IndexText;

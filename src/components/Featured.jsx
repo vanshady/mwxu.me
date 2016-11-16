@@ -1,8 +1,8 @@
 const React = require('react');
 
 const Projects = React.createClass({
-  render() {
-    return (
+    render() {
+        return (
       <section className="featured">
         <div className="textspace top">
           <aside>
@@ -57,7 +57,7 @@ const Projects = React.createClass({
         </div>
       </section>
     );
-  },
+    },
 });
 
 module.exports = Projects;

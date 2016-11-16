@@ -4,13 +4,13 @@ const Featured = require('./Featured.jsx');
 const list = require('./portfolio.json');
 
 const Projects = React.createClass({
-  componentDidMount() {
-    document.getElementById('homeTab').className = '';
-    document.getElementById('aboutTab').className = '';
-    document.getElementById('projectsTab').className = 'active';
-  },
-  render() {
-    return (
+    componentDidMount() {
+        document.getElementById('homeTab').className = '';
+        document.getElementById('aboutTab').className = '';
+        document.getElementById('projectsTab').className = 'active';
+    },
+    render() {
+        return (
       <div className="writingwrapper">
         <Featured />
 
@@ -20,7 +20,7 @@ const Projects = React.createClass({
         </section>
       </div>
     );
-  },
+    },
 });
 
 module.exports = Projects;

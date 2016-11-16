@@ -2,11 +2,11 @@ const React = require('react');
 let key = 0;
 
 const Item = React.createClass({
-  render() {
-    const items = this.props.items.map((item) => {
-      key++;
-      const route = `/projects/${this.props.year}-${item.label}`;
-      return (
+    render() {
+        const items = this.props.items.map((item) => {
+            key++;
+            const route = `/projects/${this.props.year}-${item.label}`;
+            return (
         <li key={key}>
           <a href={route}>
             <b className="label">{item.label}</b>
@@ -14,8 +14,8 @@ const Item = React.createClass({
           </a>
         </li>
       );
-    });
-    return (
+        });
+        return (
       <div className="textspace">
         <aside>
           <h2>{this.props.year}</h2></aside>
@@ -26,7 +26,7 @@ const Item = React.createClass({
         </div>
       </div>
     );
-  },
+    },
 });
 
 module.exports = Item;

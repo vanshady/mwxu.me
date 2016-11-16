@@ -1,8 +1,8 @@
 const React = require('react');
 
 const Skills = React.createClass({
-  render() {
-    return (
+    render() {
+        return (
       <div>
         <section className="featured">
           <div className="textspace top">
@@ -110,7 +110,7 @@ Express</a>
         </section>
       </div>
     );
-  },
+    },
 });
 
 module.exports = Skills;

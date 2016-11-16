@@ -1,13 +1,12 @@
 const React = require('react');
-const IndexText = require('./IndexText.jsx');
 
 const About = React.createClass({
-  componentDidMount() {
-    document.getElementById('homeTab').className = '';
-    document.getElementById('aboutTab').className = 'active';
-  },
-  render() {
-    return (
+    componentDidMount() {
+        document.getElementById('homeTab').className = '';
+        document.getElementById('aboutTab').className = 'active';
+    },
+    render() {
+        return (
       <div>
         <p> <img src="/img/avatar.jpg" alt="avatar" className="fullimg avatar" /> </p>
         <section className="text">
@@ -60,7 +59,7 @@ const About = React.createClass({
         </section>
       </div>
     );
-  },
+    },
 });
 
 module.exports = About;

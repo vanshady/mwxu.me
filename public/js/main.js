@@ -24408,7 +24408,6 @@ module.exports = Routes;
 'use strict';
 
 var React = require('react');
-var IndexText = require('./IndexText.jsx');
 
 var About = React.createClass({
   displayName: 'About',
@@ -24560,7 +24559,7 @@ var About = React.createClass({
 
 module.exports = About;
 
-},{"./IndexText.jsx":225,"react":217}],222:[function(require,module,exports){
+},{"react":217}],222:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -24839,6 +24838,7 @@ var React = require('react');
 var Featured = require('./Featured.jsx');
 var IndexText = require('./IndexText.jsx');
 var Skills = require('./Skills.jsx');
+
 var Index = React.createClass({
   displayName: 'Index',
   componentDidMount: function componentDidMount() {
@@ -24994,115 +24994,122 @@ module.exports = Item;
 'use strict';
 
 var React = require('react');
-var Projects = require('./Projects.jsx');
 
 var projects = require('./portfolio.json');
 
 var Project = React.createClass({
-  displayName: 'Project',
-  componentDidMount: function componentDidMount() {
-    document.getElementById('homeTab').className = '';
-    document.getElementById('aboutTab').className = '';
-  },
-  componentDidUpdate: function componentDidUpdate() {
-    // window.scrollTo(0, 0);
-  },
-  render: function render() {
-    var key = 0;
-    var year = this.props.params.name.slice(0, 4);
-    var name = this.props.params.name.slice(5);
-    var project = projects[year].filter(function (v) {
-      return v.label === name;
-    })[0];
-    var time = project.month + ' ' + year;
-    var image = function image() {
-      if (project.video) {
-        return React.createElement('div', { dangerouslySetInnerHTML: { __html: project.video } });
-      } else if (project.img) {
-        if (project.link) {
-          return React.createElement(
-            'a',
-            { href: project.link },
-            React.createElement('img', { src: project.img, alt: name, className: 'fullimg' })
-          );
-        } else if (project.code) {
-          return React.createElement(
-            'a',
-            { href: project.code },
-            React.createElement('img', { src: project.img, alt: name, className: 'fullimg' })
-          );
-        }
-        return React.createElement('img', { src: project.img, alt: name, className: 'fullimg' });
-      }
-    };
-    var paragraphs = project.desc.map(function (p) {
-      key++;
-      return React.createElement('p', { key: key, dangerouslySetInnerHTML: { __html: p } });
-    });
-    var link = function link() {
-      if (project.link) {
+    displayName: 'Project',
+    componentDidMount: function componentDidMount() {
+        document.getElementById('homeTab').className = '';
+        document.getElementById('aboutTab').className = '';
+    },
+    componentDidUpdate: function componentDidUpdate() {
+        // window.scrollTo(0, 0);
+    },
+    render: function render() {
+        var key = 0;
+        var year = this.props.params.name.slice(0, 4);
+        var name = this.props.params.name.slice(5);
+        var project = projects[year].filter(function (v) {
+            return v.label === name;
+        })[0];
+        var time = project.month + ' ' + year;
+        var image = function image() {
+            if (project.video) {
+                return React.createElement('div', { dangerouslySetInnerHTML: { __html: project.video } });
+            } else if (project.img) {
+                if (project.link) {
+                    return React.createElement(
+                        'a',
+                        { href: project.link },
+                        React.createElement('img', { src: project.img, alt: name, className: 'fullimg' })
+                    );
+                } else if (project.code) {
+                    return React.createElement(
+                        'a',
+                        { href: project.code },
+                        React.createElement('img', { src: project.img, alt: name, className: 'fullimg' })
+                    );
+                }
+
+                return React.createElement('img', { src: project.img, alt: name, className: 'fullimg' });
+            }
+
+            return null;
+        };
+
+        var paragraphs = project.desc.map(function (p) {
+            key++;
+            return React.createElement('p', { key: key, dangerouslySetInnerHTML: { __html: p } });
+        });
+        var link = function link() {
+            if (project.link) {
+                return React.createElement(
+                    'p',
+                    null,
+                    'Demo: ',
+                    React.createElement(
+                        'a',
+                        { href: project.link },
+                        project.link
+                    )
+                );
+            }
+
+            return null;
+        };
+        var code = function code() {
+            if (project.code) {
+                return React.createElement(
+                    'p',
+                    null,
+                    'Code: ',
+                    React.createElement(
+                        'a',
+                        { href: project.code },
+                        project.code
+                    )
+                );
+            }
+
+            return null;
+        };
         return React.createElement(
-          'p',
-          null,
-          'Demo: ',
-          React.createElement(
-            'a',
-            { href: project.link },
-            project.link
-          )
-        );
-      }
-    };
-    var code = function code() {
-      if (project.code) {
-        return React.createElement(
-          'p',
-          null,
-          'Code: ',
-          React.createElement(
-            'a',
-            { href: project.code },
-            project.code
-          )
-        );
-      }
-    };
-    return React.createElement(
-      'div',
-      null,
-      React.createElement(
-        'article',
-        null,
-        React.createElement(
-          'h1',
-          null,
-          name
-        ),
-        React.createElement(
-          'div',
-          { className: 'body' },
-          image(),
-          paragraphs,
-          link(),
-          code(),
-          React.createElement(
-            'p',
+            'div',
             null,
             React.createElement(
-              'time',
-              { pubdate: true },
-              time
+                'article',
+                null,
+                React.createElement(
+                    'h1',
+                    null,
+                    name
+                ),
+                React.createElement(
+                    'div',
+                    { className: 'body' },
+                    image(),
+                    paragraphs,
+                    link(),
+                    code(),
+                    React.createElement(
+                        'p',
+                        null,
+                        React.createElement(
+                            'time',
+                            { pubdate: true },
+                            time
+                        )
+                    )
+                )
             )
-          )
-        )
-      )
-    );
-  }
+        );
+    }
 });
 
 module.exports = Project;
 
-},{"./Projects.jsx":228,"./portfolio.json":230,"react":217}],228:[function(require,module,exports){
+},{"./portfolio.json":230,"react":217}],228:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
