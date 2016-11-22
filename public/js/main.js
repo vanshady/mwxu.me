@@ -24884,9 +24884,11 @@ var IndexText = React.createClass({
       React.createElement(
         "p",
         { className: "intro" },
-        "I’m Minwei Xu 徐旻威, a web developer",
+        "I’m Minwei Xu 徐旻威 (@vanshady),",
         React.createElement("br", null),
-        "and a sophomore at JHU.",
+        "a web developer。",
+        React.createElement("br", null),
+        "and a sophomore at Johns Hopkins University.",
         React.createElement("br", null),
         React.createElement(
           "a",
@@ -24894,7 +24896,7 @@ var IndexText = React.createClass({
           React.createElement(
             "span",
             { style: { position: 'relative', top: '2px', right: '1px' } },
-            React.createElement("img", { src: "/img/linkedin.png", width: "25", height: "25", border: "0" })
+            React.createElement("img", { src: "/img/linkedin.png", width: "27", height: "27", border: "0" })
           ),
           React.createElement(
             "span",
@@ -24915,6 +24917,21 @@ var IndexText = React.createClass({
             "span",
             { style: { color: 'black', fontWeight: '500' } },
             "Github"
+          )
+        ),
+        "  ·  ",
+        React.createElement(
+          "a",
+          { href: "https://medium.com/@vanshady/" },
+          React.createElement(
+            "span",
+            { style: { position: 'relative', top: '2px', right: '2px' } },
+            React.createElement("img", { src: "/img/medium.jpg", width: "24", height: "24", border: "0" })
+          ),
+          React.createElement(
+            "span",
+            { style: { color: 'black', fontWeight: '500' } },
+            "Medium"
           )
         ),
         React.createElement("br", null),
