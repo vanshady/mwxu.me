@@ -6,11 +6,12 @@ const IndexText = React.createClass({
       <section className="text">
         <p> <img src="/img/avatar.jpg" alt="avatar" className="fullimg avatar" /> </p>
         <p className="intro">
-          I’m Minwei Xu 徐旻威 (@vanshady),
+          Minwei Xu 徐旻威 (@vanshady)
           <br />
-          a web developer。
+          Web Developer
           <br />
-          and a sophomore at Johns Hopkins University.
+          Sophomore at Johns Hopkins University.
+          <br />
           <br />
           <a href="https://www.linkedin.com/in/minweixu">
             <span style={{ position: 'relative', top: '2px', right: '1px' }} >

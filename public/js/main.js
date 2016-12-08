@@ -24884,11 +24884,12 @@ var IndexText = React.createClass({
       React.createElement(
         "p",
         { className: "intro" },
-        "I’m Minwei Xu 徐旻威 (@vanshady),",
+        "Minwei Xu 徐旻威 (@vanshady)",
         React.createElement("br", null),
-        "a web developer。",
+        "Web Developer",
         React.createElement("br", null),
-        "and a sophomore at Johns Hopkins University.",
+        "Sophomore at Johns Hopkins University.",
+        React.createElement("br", null),
         React.createElement("br", null),
         React.createElement(
           "a",
