@@ -39,17 +39,17 @@ const Projects = React.createClass({
                 <em className="detail">2016</em>
               </a>
             </div>
+            <div style={{ position: 'relative', left: '10px' }}>
+              <a href="/projects/2016-University">
+                <img src="/img/university.png" className="fullimg" />
+                <b className="label">University</b>
+                <em className="detail">2016</em>
+              </a>
+            </div>
             <div>
               <a href="/projects/2016-SiliconHacks">
                 <img src="/img/silicon.png" className="fullimg" />
                 <b className="label">SiliconHacks</b>
-                <em className="detail">2016</em>
-              </a>
-            </div>
-            <div style={{ position: 'relative', left: '10px' }}>
-              <a href="/projects/2016-Eventbrite Data Visualization">
-                <img src="/img/GMapFull.png" className="fullimg" />
-                <b className="label">Eventbrite Data Visualization</b>
                 <em className="detail">2016</em>
               </a>
             </div>
