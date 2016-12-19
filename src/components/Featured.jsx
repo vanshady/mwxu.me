@@ -1,8 +1,6 @@
 const React = require('react');
 
-const Projects = React.createClass({
-    render() {
-        return (
+const Projects = () =>
       <section className="featured">
         <div className="textspace top">
           <aside>
@@ -55,8 +53,6 @@ const Projects = React.createClass({
             </div>
           </div>
         </div>
-      </section>);
-    },
-});
+      </section>;
 
 module.exports = Projects;
