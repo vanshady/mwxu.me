@@ -1,6 +1,8 @@
 const React = require('react');
 
-const IndexText = () =>
+const IndexText = React.createClass({
+    render() {
+        return (
       <section className="text">
         <p> <img src="/img/avatar.jpg" alt="avatar" className="fullimg avatar" /> </p>
         <p className="intro">
@@ -34,6 +36,9 @@ const IndexText = () =>
           <br />
           <a href="mailto:mxu31@jhu.edu">mxu31@jhu.edu</a>
         </p>
-      </section>;
+      </section>
+    );
+    },
+});
 
 module.exports = IndexText;

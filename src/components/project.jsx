@@ -14,7 +14,9 @@ const Project = React.createClass({
         let key = 0;
         const year = this.props.params.name.slice(0, 4);
         const name = this.props.params.name.slice(5);
-        const project = projects[year].filter(v => v.label === name)[0];
+        const project = projects[year].filter((v) => {
+            return v.label === name;
+        })[0];
         const time = `${project.month} ${year}`;
         const image = () => {
             if (project.video) {
