@@ -24564,118 +24564,115 @@ module.exports = About;
 
 var React = require('react');
 
-var Base = React.createClass({
-  displayName: "Base",
-  render: function render() {
-    return React.createElement(
-      "div",
+var Base = function Base() {
+  return React.createElement(
+    "div",
+    null,
+    React.createElement(
+      "header",
       null,
       React.createElement(
-        "header",
-        null,
+        "div",
+        { className: "navwrapper" },
         React.createElement(
-          "div",
-          { className: "navwrapper" },
+          "a",
+          { href: "/", className: "name" },
+          "Minwei Xu"
+        ),
+        React.createElement(
+          "nav",
+          { role: "navigation" },
           React.createElement(
-            "a",
-            { href: "/", className: "name" },
-            "Minwei Xu"
-          ),
-          React.createElement(
-            "nav",
-            { role: "navigation" },
+            "ul",
+            null,
             React.createElement(
-              "ul",
+              "li",
               null,
               React.createElement(
-                "li",
-                null,
-                React.createElement(
-                  "a",
-                  { href: "/", id: "homeTab" },
-                  "Home"
-                )
-              ),
+                "a",
+                { href: "/", id: "homeTab" },
+                "Home"
+              )
+            ),
+            React.createElement(
+              "li",
+              null,
               React.createElement(
-                "li",
-                null,
-                React.createElement(
-                  "a",
-                  { href: "/about", id: "aboutTab" },
-                  "About"
-                )
-              ),
+                "a",
+                { href: "/about", id: "aboutTab" },
+                "About"
+              )
+            ),
+            React.createElement(
+              "li",
+              null,
               React.createElement(
-                "li",
-                null,
-                React.createElement(
-                  "a",
-                  { href: "/projects", id: "projectsTab" },
-                  "Projects"
-                )
-              ),
+                "a",
+                { href: "/projects", id: "projectsTab" },
+                "Projects"
+              )
+            ),
+            React.createElement(
+              "li",
+              null,
               React.createElement(
-                "li",
-                null,
-                React.createElement(
-                  "a",
-                  { href: "/Minwei_Xu_Resume.pdf" },
-                  "Resume"
-                )
+                "a",
+                { href: "/Minwei_Xu_Resume.pdf" },
+                "Resume"
               )
             )
           )
         )
-      ),
-      this.props.children,
+      )
+    ),
+    undefined.props.children,
+    React.createElement(
+      "footer",
+      null,
       React.createElement(
-        "footer",
-        null,
+        "section",
+        { className: "footersection" },
         React.createElement(
-          "section",
-          { className: "footersection" },
+          "div",
+          { className: "title" },
           React.createElement(
-            "div",
-            { className: "title" },
-            React.createElement(
-              "h2",
-              null,
-              "Minwei Xu"
-            ),
-            "Website developed by React and Express."
+            "h2",
+            null,
+            "Minwei Xu"
           ),
+          "Website developed by React and Express."
+        ),
+        React.createElement(
+          "div",
+          { className: "copyline" },
           React.createElement(
-            "div",
-            { className: "copyline" },
-            React.createElement(
-              "a",
-              { href: "mailto:mxu31@jhu.edu" },
-              "mxu31@jhu.edu"
-            ),
-            "  ·  ",
-            React.createElement(
-              "a",
-              { href: "https://www.linkedin.com/in/minweixu" },
-              "Linkedin"
-            ),
-            "  ·  ",
-            React.createElement(
-              "a",
-              { href: "https://www.facebook.com/william.hsu.182" },
-              "Facebook"
-            ),
-            "  ·  ",
-            React.createElement(
-              "a",
-              { href: "https://www.github.com/vanshady" },
-              "Github"
-            )
+            "a",
+            { href: "mailto:mxu31@jhu.edu" },
+            "mxu31@jhu.edu"
+          ),
+          "  ·  ",
+          React.createElement(
+            "a",
+            { href: "https://www.linkedin.com/in/minweixu" },
+            "Linkedin"
+          ),
+          "  ·  ",
+          React.createElement(
+            "a",
+            { href: "https://www.facebook.com/william.hsu.182" },
+            "Facebook"
+          ),
+          "  ·  ",
+          React.createElement(
+            "a",
+            { href: "https://www.github.com/vanshady" },
+            "Github"
           )
         )
       )
-    );
-  }
-});
+    )
+  );
+};
 
 module.exports = Base;
 
@@ -24684,150 +24681,147 @@ module.exports = Base;
 
 var React = require('react');
 
-var Projects = React.createClass({
-  displayName: "Projects",
-  render: function render() {
-    return React.createElement(
-      "section",
-      { className: "featured" },
+var Projects = function Projects() {
+  return React.createElement(
+    "section",
+    { className: "featured" },
+    React.createElement(
+      "div",
+      { className: "textspace top" },
+      React.createElement(
+        "aside",
+        null,
+        React.createElement(
+          "h2",
+          null,
+          "Featured Projects"
+        )
+      ),
       React.createElement(
         "div",
-        { className: "textspace top" },
+        { className: "grid" },
         React.createElement(
-          "aside",
-          null,
+          "div",
+          { style: { width: '99%', paddingLeft: '9px' } },
           React.createElement(
-            "h2",
-            null,
-            "Featured Projects"
+            "a",
+            { href: "/projects/2016-Orgo Savior" },
+            React.createElement("iframe", { width: "100%", height: "300", title: "Orgo Savior", src: "https://www.youtube.com/embed/8Clj6ftfLfk", frameBorder: "0", allowFullScreen: true }),
+            React.createElement(
+              "b",
+              { className: "label" },
+              "Orgo Savior"
+            ),
+            React.createElement(
+              "em",
+              { className: "detail" },
+              "2016"
+            )
           )
         ),
         React.createElement(
           "div",
-          { className: "grid" },
+          { style: { width: '99%', paddingLeft: '9px' } },
           React.createElement(
-            "div",
-            { style: { width: '99%', paddingLeft: '9px' } },
+            "a",
+            { href: "/projects/2015-Living Liquid" },
+            React.createElement("iframe", { width: "100%", height: "300", title: "Living Liquid", src: "https://www.youtube.com/embed/9xNOjb1kUio", frameBorder: "0", allowFullScreen: true }),
             React.createElement(
-              "a",
-              { href: "/projects/2016-Orgo Savior" },
-              React.createElement("iframe", { width: "100%", height: "300", title: "Orgo Savior", src: "https://www.youtube.com/embed/8Clj6ftfLfk", frameBorder: "0", allowFullScreen: true }),
-              React.createElement(
-                "b",
-                { className: "label" },
-                "Orgo Savior"
-              ),
-              React.createElement(
-                "em",
-                { className: "detail" },
-                "2016"
-              )
+              "b",
+              { className: "label" },
+              "Living Liquid"
+            ),
+            React.createElement(
+              "em",
+              { className: "detail" },
+              "2015"
             )
-          ),
+          )
+        ),
+        React.createElement(
+          "div",
+          null,
           React.createElement(
-            "div",
-            { style: { width: '99%', paddingLeft: '9px' } },
+            "a",
+            { href: "/projects/2016-AllCommunication" },
             React.createElement(
-              "a",
-              { href: "/projects/2015-Living Liquid" },
-              React.createElement("iframe", { width: "100%", height: "300", title: "Living Liquid", src: "https://www.youtube.com/embed/9xNOjb1kUio", frameBorder: "0", allowFullScreen: true }),
-              React.createElement(
-                "b",
-                { className: "label" },
-                "Living Liquid"
-              ),
-              React.createElement(
-                "em",
-                { className: "detail" },
-                "2015"
-              )
+              "span",
+              { style: { height: '40px' } },
+              React.createElement("img", { src: "/img/AllCommunication.png", className: "fullimg" })
+            ),
+            React.createElement(
+              "b",
+              { className: "label" },
+              "AllCommunication"
+            ),
+            React.createElement(
+              "em",
+              { className: "detail" },
+              "2016"
             )
-          ),
+          )
+        ),
+        React.createElement(
+          "div",
+          { style: { position: 'relative', left: '10px' } },
           React.createElement(
-            "div",
-            null,
+            "a",
+            { href: "/projects/2016-Realtime Chat Application" },
+            React.createElement("img", { src: "/img/chat.png", className: "fullimg" }),
             React.createElement(
-              "a",
-              { href: "/projects/2016-AllCommunication" },
-              React.createElement(
-                "span",
-                { style: { height: '40px' } },
-                React.createElement("img", { src: "/img/AllCommunication.png", className: "fullimg" })
-              ),
-              React.createElement(
-                "b",
-                { className: "label" },
-                "AllCommunication"
-              ),
-              React.createElement(
-                "em",
-                { className: "detail" },
-                "2016"
-              )
+              "b",
+              { className: "label" },
+              "Realtime Chat Application"
+            ),
+            React.createElement(
+              "em",
+              { className: "detail" },
+              "2016"
             )
-          ),
+          )
+        ),
+        React.createElement(
+          "div",
+          { style: { position: 'relative', left: '10px' } },
           React.createElement(
-            "div",
-            { style: { position: 'relative', left: '10px' } },
+            "a",
+            { href: "/projects/2016-University" },
+            React.createElement("img", { src: "/img/university.png", className: "fullimg" }),
             React.createElement(
-              "a",
-              { href: "/projects/2016-Realtime Chat Application" },
-              React.createElement("img", { src: "/img/chat.png", className: "fullimg" }),
-              React.createElement(
-                "b",
-                { className: "label" },
-                "Realtime Chat Application"
-              ),
-              React.createElement(
-                "em",
-                { className: "detail" },
-                "2016"
-              )
+              "b",
+              { className: "label" },
+              "University"
+            ),
+            React.createElement(
+              "em",
+              { className: "detail" },
+              "2016"
             )
-          ),
+          )
+        ),
+        React.createElement(
+          "div",
+          null,
           React.createElement(
-            "div",
-            null,
+            "a",
+            { href: "/projects/2016-SiliconHacks" },
+            React.createElement("img", { src: "/img/silicon.png", className: "fullimg" }),
             React.createElement(
-              "a",
-              { href: "/projects/2016-SiliconHacks" },
-              React.createElement("img", { src: "/img/silicon.png", className: "fullimg" }),
-              React.createElement(
-                "b",
-                { className: "label" },
-                "SiliconHacks"
-              ),
-              React.createElement(
-                "em",
-                { className: "detail" },
-                "2016"
-              )
-            )
-          ),
-          React.createElement(
-            "div",
-            { style: { position: 'relative', left: '10px' } },
+              "b",
+              { className: "label" },
+              "SiliconHacks"
+            ),
             React.createElement(
-              "a",
-              { href: "/projects/2016-Eventbrite Data Visualization" },
-              React.createElement("img", { src: "/img/GMapFull.png", className: "fullimg" }),
-              React.createElement(
-                "b",
-                { className: "label" },
-                "Eventbrite Data Visualization"
-              ),
-              React.createElement(
-                "em",
-                { className: "detail" },
-                "2016"
-              )
+              "em",
+              { className: "detail" },
+              "2016"
             )
           )
         )
       )
-    );
-  }
-});
+    )
+  );
+};
 
 module.exports = Projects;
 
@@ -24868,83 +24862,80 @@ module.exports = Index;
 
 var React = require('react');
 
-var IndexText = React.createClass({
-  displayName: "IndexText",
-  render: function render() {
-    return React.createElement(
-      "section",
-      { className: "text" },
+var IndexText = function IndexText() {
+  return React.createElement(
+    "section",
+    { className: "text" },
+    React.createElement(
+      "p",
+      null,
+      " ",
+      React.createElement("img", { src: "/img/avatar.jpg", alt: "avatar", className: "fullimg avatar" }),
+      " "
+    ),
+    React.createElement(
+      "p",
+      { className: "intro" },
+      "Minwei Xu 徐旻威 (@vanshady)",
+      React.createElement("br", null),
+      "Web Developer",
+      React.createElement("br", null),
+      "Sophomore at Johns Hopkins University.",
+      React.createElement("br", null),
+      React.createElement("br", null),
       React.createElement(
-        "p",
-        null,
-        " ",
-        React.createElement("img", { src: "/img/avatar.jpg", alt: "avatar", className: "fullimg avatar" }),
-        " "
-      ),
-      React.createElement(
-        "p",
-        { className: "intro" },
-        "Minwei Xu 徐旻威 (@vanshady)",
-        React.createElement("br", null),
-        "Web Developer",
-        React.createElement("br", null),
-        "Sophomore at Johns Hopkins University.",
-        React.createElement("br", null),
-        React.createElement("br", null),
+        "a",
+        { href: "https://www.linkedin.com/in/minweixu" },
         React.createElement(
-          "a",
-          { href: "https://www.linkedin.com/in/minweixu" },
-          React.createElement(
-            "span",
-            { style: { position: 'relative', top: '2px', right: '1px' } },
-            React.createElement("img", { src: "/img/linkedin.png", width: "27", height: "27", border: "0" })
-          ),
-          React.createElement(
-            "span",
-            { style: { color: 'black', fontWeight: '500' } },
-            "Linkedin"
-          )
+          "span",
+          { style: { position: 'relative', top: '2px', right: '1px' } },
+          React.createElement("img", { src: "/img/linkedin.png", width: "27", height: "27", border: "0" })
         ),
-        "  ·  ",
         React.createElement(
-          "a",
-          { href: "https://www.github.com/vanshady" },
-          React.createElement(
-            "span",
-            { style: { position: 'relative', top: '2px', right: '2px' } },
-            React.createElement("img", { src: "/img/github.png", width: "24", height: "24", border: "0" })
-          ),
-          React.createElement(
-            "span",
-            { style: { color: 'black', fontWeight: '500' } },
-            "Github"
-          )
-        ),
-        "  ·  ",
-        React.createElement(
-          "a",
-          { href: "https://medium.com/@vanshady/" },
-          React.createElement(
-            "span",
-            { style: { position: 'relative', top: '2px', right: '2px' } },
-            React.createElement("img", { src: "/img/medium.jpg", width: "24", height: "24", border: "0" })
-          ),
-          React.createElement(
-            "span",
-            { style: { color: 'black', fontWeight: '500' } },
-            "Medium"
-          )
-        ),
-        React.createElement("br", null),
-        React.createElement(
-          "a",
-          { href: "mailto:mxu31@jhu.edu" },
-          "mxu31@jhu.edu"
+          "span",
+          { style: { color: 'black', fontWeight: '500' } },
+          "Linkedin"
         )
+      ),
+      "  ·  ",
+      React.createElement(
+        "a",
+        { href: "https://www.github.com/vanshady" },
+        React.createElement(
+          "span",
+          { style: { position: 'relative', top: '2px', right: '2px' } },
+          React.createElement("img", { src: "/img/github.png", width: "24", height: "24", border: "0" })
+        ),
+        React.createElement(
+          "span",
+          { style: { color: 'black', fontWeight: '500' } },
+          "Github"
+        )
+      ),
+      "  ·  ",
+      React.createElement(
+        "a",
+        { href: "https://medium.com/@vanshady/" },
+        React.createElement(
+          "span",
+          { style: { position: 'relative', top: '2px', right: '2px' } },
+          React.createElement("img", { src: "/img/medium.jpg", width: "24", height: "24", border: "0" })
+        ),
+        React.createElement(
+          "span",
+          { style: { color: 'black', fontWeight: '500' } },
+          "Medium"
+        )
+      ),
+      React.createElement("br", null),
+      React.createElement(
+        "a",
+        { href: "mailto:mxu31@jhu.edu" },
+        "mxu31@jhu.edu"
       )
-    );
-  }
-});
+    )
+  );
+};
 
 module.exports = IndexText;
 
@@ -25164,320 +25155,328 @@ module.exports = Projects;
 
 var React = require('react');
 
-var Skills = React.createClass({
-  displayName: "Skills",
-  render: function render() {
-    return React.createElement(
-      "div",
-      null,
+var Skills = function Skills() {
+  return React.createElement(
+    "div",
+    null,
+    React.createElement(
+      "section",
+      { className: "featured" },
       React.createElement(
-        "section",
-        { className: "featured" },
+        "div",
+        { className: "textspace top" },
+        React.createElement(
+          "aside",
+          null,
+          React.createElement(
+            "h1",
+            { style: { fontSize: '20px', left: '2px' } },
+            "Skills"
+          )
+        )
+      )
+    ),
+    React.createElement(
+      "section",
+      { className: "writinglist" },
+      React.createElement(
+        "div",
+        { className: "textspace" },
+        React.createElement(
+          "aside",
+          null,
+          React.createElement(
+            "h2",
+            null,
+            "Web Development"
+          )
+        ),
         React.createElement(
           "div",
-          { className: "textspace top" },
+          null,
           React.createElement(
-            "aside",
-            null,
+            "ul",
+            { className: "tablelist" },
             React.createElement(
-              "h1",
-              { style: { fontSize: '20px', left: '2px' } },
-              "Skills"
+              "li",
+              { key: 0 },
+              React.createElement(
+                "a",
+                { className: "label" },
+                "1+ year experience"
+              ),
+              React.createElement(
+                "a",
+                { className: "label" },
+                "Extensive experience with React.js, Redux, react-router, GraphQL, D3.js and Express"
+              )
             )
           )
         )
       ),
       React.createElement(
-        "section",
-        { className: "writinglist" },
+        "div",
+        { className: "textspace" },
         React.createElement(
-          "div",
-          { className: "textspace" },
+          "aside",
+          null,
           React.createElement(
-            "aside",
+            "h2",
             null,
-            React.createElement(
-              "h2",
-              null,
-              "Web Development"
-            )
-          ),
-          React.createElement(
-            "div",
-            null,
-            React.createElement(
-              "ul",
-              { className: "tablelist" },
-              React.createElement(
-                "li",
-                { key: 0 },
-                React.createElement(
-                  "a",
-                  { className: "label" },
-                  "1+ year experience"
-                ),
-                React.createElement(
-                  "a",
-                  { className: "label" },
-                  "Extensive experience with React.js, Redux, react-router, GraphQL, D3.js and Express"
-                )
-              )
-            )
+            "Software Engineering"
           )
         ),
         React.createElement(
           "div",
-          { className: "textspace" },
+          null,
           React.createElement(
-            "aside",
-            null,
+            "ul",
+            { className: "tablelist" },
             React.createElement(
-              "h2",
-              null,
-              "Software Engineering"
-            )
-          ),
-          React.createElement(
-            "div",
-            null,
-            React.createElement(
-              "ul",
-              { className: "tablelist" },
+              "li",
+              { key: 0 },
               React.createElement(
-                "li",
-                { key: 0 },
-                React.createElement(
-                  "a",
-                  { className: "label" },
-                  "Familiar experience with Java, C and C++. Have experience developing with Python, R, and Matlab. Familiar with Linux/Unix commands."
-                )
+                "a",
+                { className: "label" },
+                "Familiar experience with Java, C and C++. Have experience developing with Python, R, and Matlab. Familiar with Linux/Unix commands."
               )
             )
+          )
+        )
+      ),
+      React.createElement(
+        "div",
+        { className: "textspace" },
+        React.createElement(
+          "aside",
+          null,
+          React.createElement(
+            "h2",
+            null,
+            "Data Science"
           )
         ),
         React.createElement(
           "div",
-          { className: "textspace" },
+          null,
           React.createElement(
-            "aside",
-            null,
+            "ul",
+            { className: "tablelist" },
             React.createElement(
-              "h2",
-              null,
-              "Data Science"
-            )
-          ),
-          React.createElement(
-            "div",
-            null,
-            React.createElement(
-              "ul",
-              { className: "tablelist" },
+              "li",
+              { key: 0 },
               React.createElement(
-                "li",
-                { key: 0 },
-                React.createElement(
-                  "a",
-                  { className: "label" },
-                  "Conducted researches about data visualization at Shanghai Jiao Tong University and UC Davis"
-                ),
-                React.createElement(
-                  "a",
-                  { className: "label" },
-                  "Completed Andrew Ng's Macine Learning Course"
-                )
+                "a",
+                { className: "label" },
+                "Conducted researches about data visualization at Shanghai Jiao Tong University and UC Davis"
+              ),
+              React.createElement(
+                "a",
+                { className: "label" },
+                "Completed Andrew Ng's Macine Learning Course"
               )
             )
+          )
+        )
+      ),
+      React.createElement(
+        "div",
+        { className: "textspace" },
+        React.createElement(
+          "aside",
+          null,
+          React.createElement(
+            "h2",
+            null,
+            "Competitive Programming"
           )
         ),
         React.createElement(
           "div",
-          { className: "textspace" },
+          null,
           React.createElement(
-            "aside",
-            null,
+            "ul",
+            { className: "tablelist" },
             React.createElement(
-              "h2",
-              null,
-              "Competitive Programming"
-            )
-          ),
-          React.createElement(
-            "div",
-            null,
-            React.createElement(
-              "ul",
-              { className: "tablelist" },
+              "li",
+              { key: 0 },
               React.createElement(
-                "li",
-                { key: 0 },
-                React.createElement(
-                  "a",
-                  { className: "label" },
-                  "10+ year experience"
-                ),
-                React.createElement(
-                  "a",
-                  { className: "label" },
-                  "2016 ACM-ICPC Mid-Atlantic Region",
-                  React.createElement(
-                    "b",
-                    { className: "sublabel" },
-                    "Honorable Mention"
-                  )
-                ),
-                React.createElement(
-                  "a",
-                  { className: "label" },
-                  "2015 ACM-ICPC Pacific Northwest Region",
-                  React.createElement(
-                    "b",
-                    { className: "sublabel" },
-                    "Division 1 Honorable Mention"
-                  )
-                ),
-                React.createElement(
-                  "a",
-                  { className: "label" },
-                  "2015 UC Davis Algorithm Hackathon",
-                  React.createElement(
-                    "b",
-                    { className: "sublabel" },
-                    "1st / 80"
-                  )
-                )
-              )
-            )
-          )
-        ),
-        React.createElement(
-          "div",
-          { className: "textspace" },
-          React.createElement(
-            "aside",
-            null,
-            React.createElement(
-              "h2",
-              null,
-              "Hackathons"
-            )
-          ),
-          React.createElement(
-            "div",
-            null,
-            React.createElement(
-              "ul",
-              { className: "tablelist" },
+                "a",
+                { className: "label" },
+                "10+ year experience"
+              ),
               React.createElement(
-                "li",
-                { key: 0 },
+                "a",
+                { className: "label" },
+                "2016 ACM-ICPC Mid-Atlantic Region",
                 React.createElement(
-                  "a",
-                  { href: "/projects/2016-Orgo Savior", lassName: "label" },
-                  "HopHacks | Orgo Savior",
-                  React.createElement(
-                    "b",
-                    { className: "sublabel" },
-                    "3rd Prize"
-                  )
-                ),
-                React.createElement(
-                  "a",
-                  { className: "label", href: "/projects/2016-AllCommunication" },
-                  "PennApps | AllCommunication"
-                ),
-                React.createElement(
-                  "a",
-                  { className: "label" },
-                  "HackDavis | Chrome Voice Assist",
-                  React.createElement(
-                    "b",
-                    { className: "sublabel" },
-                    "Most Innovative Hack | Best UX With Amazon Alexa"
-                  )
-                ),
-                React.createElement(
-                  "a",
-                  { className: "label", href: "/projects/2015-SpeechHacks" },
-                  "HackingEDU | SpeechHacks",
-                  React.createElement(
-                    "b",
-                    { className: "sublabel" },
-                    "Best Collaboration Hack Using Moxtra"
-                  )
-                )
-              )
-            )
-          )
-        ),
-        React.createElement(
-          "div",
-          { className: "textspace" },
-          React.createElement(
-            "aside",
-            null,
-            React.createElement(
-              "h2",
-              null,
-              "Open Source Contributions"
-            )
-          ),
-          React.createElement(
-            "div",
-            null,
-            React.createElement(
-              "ul",
-              { className: "tablelist" },
-              React.createElement(
-                "li",
-                { key: 0 },
-                React.createElement(
-                  "a",
-                  { className: "label", href: "https://www.npmjs.com/package/angle-to-direction" },
-                  "angle-to-degree | Author",
-                  React.createElement(
-                    "b",
-                    { className: "sublabel" },
-                    "An npm package with 2200+ downloads."
-                  )
+                  "b",
+                  { className: "sublabel" },
+                  "Honorable Mention"
                 )
               ),
               React.createElement(
-                "li",
-                { key: 1 },
+                "a",
+                { className: "label" },
+                "2015 ACM-ICPC Pacific Northwest Region",
                 React.createElement(
-                  "a",
-                  { className: "label", href: "https://github.com/sahat/hackathon-starter" },
-                  "Hackathon-starter | Major Contributor",
-                  React.createElement(
-                    "b",
-                    { className: "sublabel" },
-                    "A boilerplate for Node.js app with 19k+ stars."
-                  )
+                  "b",
+                  { className: "sublabel" },
+                  "Division 1 Honorable Mention"
                 )
               ),
               React.createElement(
-                "li",
-                { key: 2 },
+                "a",
+                { className: "label" },
+                "2015 UC Davis Algorithm Hackathon",
                 React.createElement(
-                  "a",
-                  { className: "label" },
-                  "D3.js, React.js | Contributor"
+                  "b",
+                  { className: "sublabel" },
+                  "1st / 80"
                 )
               )
             )
           )
         )
+      ),
+      React.createElement(
+        "div",
+        { className: "textspace" },
+        React.createElement(
+          "aside",
+          null,
+          React.createElement(
+            "h2",
+            null,
+            "Hackathons"
+          )
+        ),
+        React.createElement(
+          "div",
+          null,
+          React.createElement(
+            "ul",
+            { className: "tablelist" },
+            React.createElement(
+              "li",
+              { key: 0 },
+              React.createElement(
+                "a",
+                { href: "/projects/2016-Orgo Savior", lassName: "label" },
+                "HopHacks | Orgo Savior",
+                React.createElement(
+                  "b",
+                  { className: "sublabel" },
+                  "3rd Prize"
+                )
+              ),
+              React.createElement(
+                "a",
+                { className: "label", href: "/projects/2016-AllCommunication" },
+                "PennApps | AllCommunication"
+              ),
+              React.createElement(
+                "a",
+                { className: "label" },
+                "HackDavis | Chrome Voice Assist",
+                React.createElement(
+                  "b",
+                  { className: "sublabel" },
+                  "Most Innovative Hack | Best UX With Amazon Alexa"
+                )
+              ),
+              React.createElement(
+                "a",
+                { className: "label", href: "/projects/2015-SpeechHacks" },
+                "HackingEDU | SpeechHacks",
+                React.createElement(
+                  "b",
+                  { className: "sublabel" },
+                  "Best Collaboration Hack Using Moxtra"
+                )
+              )
+            )
+          )
+        )
+      ),
+      React.createElement(
+        "div",
+        { className: "textspace" },
+        React.createElement(
+          "aside",
+          null,
+          React.createElement(
+            "h2",
+            null,
+            "Open Source Contributions"
+          )
+        ),
+        React.createElement(
+          "div",
+          null,
+          React.createElement(
+            "ul",
+            { className: "tablelist" },
+            React.createElement(
+              "li",
+              { key: 0 },
+              React.createElement(
+                "a",
+                { className: "label", href: "https://www.npmjs.com/package/angle-to-direction" },
+                "angle-to-degree | Author",
+                React.createElement(
+                  "b",
+                  { className: "sublabel" },
+                  "An npm package with 2200+ downloads."
+                )
+              )
+            ),
+            React.createElement(
+              "li",
+              { key: 1 },
+              React.createElement(
+                "a",
+                { className: "label", href: "https://github.com/sahat/hackathon-starter" },
+                "Hackathon-starter | Major Contributor",
+                React.createElement(
+                  "b",
+                  { className: "sublabel" },
+                  "A boilerplate for Node.js app with 19k+ stars."
+                )
+              )
+            ),
+            React.createElement(
+              "li",
+              { key: 2 },
+              React.createElement(
+                "a",
+                { className: "label" },
+                "D3.js, React.js | Contributor"
+              )
+            )
+          )
+        )
       )
-    );
-  }
-});
+    )
+  );
+};
 
 module.exports = Skills;
 
 },{"react":217}],230:[function(require,module,exports){
 module.exports={
   "2016": [
+    {
+      "label": "University",
+      "link": "http://university.minweixu.com",
+      "code": "https://github.com/vanshady/University",
+      "img": "/img/university.png",
+      "desc": [
+        "A dashboard showing the 2015 statistics of university data, developed with React, Material-UI, D3.js, MySQL and Spark (Java).",
+        "Developed by Minwei Xu and Xinyu Huang."
+      ],
+      "month": "Dec",
+    },
     {
       "label": "Orgo Savior",
       "code": "https://github.com/vanshady/Orgo-Savior",

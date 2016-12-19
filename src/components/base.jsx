@@ -1,8 +1,6 @@
 const React = require('react');
 
-const Base = React.createClass({
-    render() {
-        return (
+const Base = () =>
       <div>
         <header>
           <div className="navwrapper">
@@ -34,9 +32,6 @@ const Base = React.createClass({
             </div>
           </section>
         </footer>
-      </div>
-    );
-    },
-});
+      </div>;
 
 module.exports = Base;
