@@ -24787,15 +24787,15 @@ var Projects = React.createClass({
           ),
           React.createElement(
             "div",
-            null,
+            { style: { position: 'relative', left: '10px' } },
             React.createElement(
               "a",
-              { href: "/projects/2016-SiliconHacks" },
-              React.createElement("img", { src: "/img/silicon.png", className: "fullimg" }),
+              { href: "/projects/2016-University" },
+              React.createElement("img", { src: "/img/university.png", className: "fullimg" }),
               React.createElement(
                 "b",
                 { className: "label" },
-                "SiliconHacks"
+                "University"
               ),
               React.createElement(
                 "em",
@@ -24806,15 +24806,15 @@ var Projects = React.createClass({
           ),
           React.createElement(
             "div",
-            { style: { position: 'relative', left: '10px' } },
+            null,
             React.createElement(
               "a",
-              { href: "/projects/2016-Eventbrite Data Visualization" },
-              React.createElement("img", { src: "/img/GMapFull.png", className: "fullimg" }),
+              { href: "/projects/2016-SiliconHacks" },
+              React.createElement("img", { src: "/img/silicon.png", className: "fullimg" }),
               React.createElement(
                 "b",
                 { className: "label" },
-                "Eventbrite Data Visualization"
+                "SiliconHacks"
               ),
               React.createElement(
                 "em",
@@ -25478,6 +25478,17 @@ module.exports = Skills;
 },{"react":217}],230:[function(require,module,exports){
 module.exports={
   "2016": [
+    {
+      "label": "University",
+      "link": "http://university.minweixu.com",
+      "code": "https://github.com/vanshady/University",
+      "img": "/img/university.png",
+      "desc": [
+        "A dashboard showing the 2015 statistics of university data, developed with React, Material-UI, D3.js, MySQL and Spark (Java).",
+        "Developed by Minwei Xu and Xinyu Huang."
+      ],
+      "month": "Dec",
+    },
     {
       "label": "Orgo Savior",
       "code": "https://github.com/vanshady/Orgo-Savior",

@@ -1,6 +1,17 @@
 {
   "2016": [
     {
+      "label": "University",
+      "link": "http://university.minweixu.com",
+      "code": "https://github.com/vanshady/University",
+      "img": "/img/university.png",
+      "desc": [
+        "A dashboard showing the 2015 statistics of university data, developed with React, Material-UI, D3.js, MySQL and Spark (Java).",
+        "Developed by Minwei Xu and Xinyu Huang."
+      ],
+      "month": "Dec",
+    },
+    {
       "label": "Orgo Savior",
       "code": "https://github.com/vanshady/Orgo-Savior",
       "img": "/img/orgosavior.jpg",
