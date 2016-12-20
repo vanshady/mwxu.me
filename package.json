@@ -5,7 +5,7 @@
   "main": "server.js",
   "engines": {
     "node": "v6.9.1",
-    "yarn": "0.16.1"
+    "yarn": "0.18.1"
   },
   "scripts": {
     "start": "nodemon server.js",
