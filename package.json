@@ -4,7 +4,8 @@
   "description": "Minwei Xu's personal website.",
   "main": "server.js",
   "engines": {
-    "node": "v6.9.1"
+    "node": "v6.9.1",
+    "yarn": "0.16.1"
   },
   "scripts": {
     "start": "nodemon server.js",
