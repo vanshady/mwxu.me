@@ -48,7 +48,7 @@
     },
     {
       "label": "Realtime Chat Application",
-      "link": "http://chat.minweixu.com",
+      "link": "http://chat.minweixu.com:8080",
       "img": "/img/chat.png",
       "desc": [
         "This is a realtime chat app developed by express, socket.io, React, Bootstrap, and MongoDB."
