@@ -23,15 +23,6 @@ const Projects = React.createClass({
                 <em className="detail">2015</em>
               </a>
             </div>
-            <div>
-              <a href="/projects/2016-AllCommunication">
-                <span style={{ height: '40px' }}>
-                  <img src="/img/AllCommunication.png" className="fullimg" />
-                </span>
-                <b className="label">AllCommunication</b>
-                <em className="detail">2016</em>
-              </a>
-            </div>
             <div style={{ position: 'relative', left: '10px' }}>
               <a href="/projects/2016-Realtime Chat Application">
                 <img src="/img/chat.png" className="fullimg" />
@@ -43,6 +34,15 @@ const Projects = React.createClass({
               <a href="/projects/2016-University">
                 <img src="/img/university.png" className="fullimg" />
                 <b className="label">University</b>
+                <em className="detail">2016</em>
+              </a>
+            </div>
+            <div>
+              <a href="/projects/2016-AllCommunication">
+                <span style={{ height: '40px' }}>
+                  <img src="/img/AllCommunication.png" className="fullimg" />
+                </span>
+                <b className="label">AllCommunication</b>
                 <em className="detail">2016</em>
               </a>
             </div>
