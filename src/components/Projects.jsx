@@ -5,9 +5,7 @@ const list = require('./portfolio.json');
 
 const Projects = React.createClass({
     componentDidMount() {
-        document.getElementById('homeTab').className = '';
-        document.getElementById('aboutTab').className = '';
-        document.getElementById('projectsTab').className = 'active';
+        this.props.activateProjectsTab();
     },
     render() {
         return (
