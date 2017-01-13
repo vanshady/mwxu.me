@@ -1,17 +1,17 @@
 {
   "name": "www.minweixu.com",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Minwei Xu's personal website.",
-  "main": "server.js",
+  "main": "src/server.js",
   "engines": {
-    "node": "v6.9.1",
+    "node": "v6.9.4",
     "yarn": "0.18.1"
   },
   "scripts": {
     "dist": "webpack --config webpack.prod.config.js -p",
     "dev": "webpack --config webpack.dev.config.js -d --watch",
     "start": "webpack-dev-server --content-base public/ --config webpack.dev.config.js --history-api-fallback --hot --inline --host 0.0.0.0",
-    "serve": "babel-node --presets 'react,es2015,stage-2' src/server.js"
+    "serve": "babel-node server.js"
   },
   "author": "Minwei Xu",
   "license": "Apache-2.0",

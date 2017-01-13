@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import compression from 'compression';
 import path from 'path';
 import React from 'react';
-import Routes from './components/Routes.jsx';
+import Routes from './src/components/Routes.jsx';
 import { renderToString } from 'react-dom/server';
 import { match, RouterContext } from 'react-router';
 
@@ -32,8 +32,8 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
-app.use(express.static(path.join(__dirname, 'static')));
+app.set('views', path.join(__dirname, 'src', 'views'));
+app.use(express.static(path.join(__dirname, 'src', 'static')));
 
 app.get('*', (req, res) => {
   match({ routes: Routes, location: req.url }, (error, redirectLocation, renderProps) => {
