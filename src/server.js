@@ -2,6 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import compression from 'compression';
 import path from 'path';
+import React from 'react';
 import Routes from './components/Routes.jsx';
 import { renderToString } from 'react-dom/server';
 import { match, RouterContext } from 'react-router';
@@ -35,16 +36,17 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'static')));
 
 app.get('*', (req, res) => {
-  console.log('what');
-  match({ Routes, location: req.url }, (error, redirectLocation, renderProps) => {
+  console.log(req.url);
+  match({ routes: Routes, location: req.url }, (error, redirectLocation, renderProps) => {
     if (error) {
       res.status(500).send(error.message);
     } else if (redirectLocation) {
       res.redirect(302, redirectLocation.pathname + redirectLocation.search);
     } else if (renderProps) {
       const markup = renderToString(<RouterContext {...renderProps} />);
-      conosle.log(markup);
-      res.status(200).render('index', { markup });
+      console.log(markup);
+      res.status(200);
+      return res.render('index', { markup });
     } else {
       res.status(404).send('Not found');
     }

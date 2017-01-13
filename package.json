@@ -25,6 +25,7 @@
     "babelify": "^7.2.0",
     "body-parser": "^1.15.0",
     "compression": "^1.6.1",
+    "ejs": "^2.5.5",
     "express": "^4.13.4",
     "history": "^2.0.1",
     "imagemin": "^5.2.2",

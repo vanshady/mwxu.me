@@ -1,7 +1,5 @@
 import React from 'react';
-import { Route, IndexRoute } from 'react-router';
-
-import { Redirect } from 'react-router';
+import { Route, IndexRoute, Redirect } from 'react-router';
 
 const Base = require('./Base.jsx');
 const Index = require('./Index.jsx');
@@ -12,10 +10,10 @@ const Projects = require('./Projects.jsx');
 const Routes = (
   <Route path="/" component={Base} >
     <IndexRoute component={Index} />
-    <Route path="/projects/:name" component={Project} />
-    <Route path="/about" component={About} />
-    <Route path="/projects" component={Projects} />
-    <Redirect from="*" to="/" />
+    <Route path="projects/:name" component={Project} />
+    <Route path="about" component={About} />
+    <Route path="projects" component={Projects} />
+    {/* <Redirect from="*" to="/" /> */}
   </Route>
 );
 

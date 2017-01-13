@@ -1,13 +1,10 @@
 const webpack = require('webpack');
 const path = require('path');
 
-const CLIENT_DIR = path.resolve(__dirname, 'src');
-const DIST_DIR = path.resolve(__dirname, 'src', 'static', 'js');
-
 const config = {
-  entry: CLIENT_DIR + '/client.js',
+  entry: path.join(__dirname, 'src', 'client.js'),
   output: {
-    path: DIST_DIR,
+    path: path.join(__dirname, 'src', 'static', 'js'),
     publicPath: '/js/',
     filename: 'bundle.js',
   },
