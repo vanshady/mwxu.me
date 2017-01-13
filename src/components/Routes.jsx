@@ -13,7 +13,7 @@ const Routes = (
     <Route path="projects/:name" component={Project} />
     <Route path="about" component={About} />
     <Route path="projects" component={Projects} />
-    {/* <Redirect from="*" to="/" /> */}
+    <Redirect from="*" to="/" />
   </Route>
 );
 
