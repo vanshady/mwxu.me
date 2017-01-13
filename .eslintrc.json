@@ -9,16 +9,12 @@
       "no-console": 0,
       "prefer-template": 0,
       "no-mixed-operators": "off",
-      "no-case-declarations": "off"
+      "no-case-declarations": "off",
+      "react/react-in-jsx-scope": "off"
     },
     "env": {
       "browser": true,
       "es6": true,
       "commonjs": true
-    },
-    "settings": {
-        "import/resolver": {
-            "webpack": { "config": "webpack.dev.config.js" }
-        }
     }
 }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta content="width=device-width" name="viewport">
+  <meta content="Minwei Xu" name="description">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="author" content="Minwei Xu">
+  <meta property="og:image" content="/img/favicon.png" />
+  <link rel='shortcut icon' type='image/x-icon' href='/img/favicon.png' />
+  <title>Minwei Xu 徐旻威 | Web Developer</title>
+
+  <link href="/stylesheet/styles.css" rel="stylesheet">
+
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-67391005-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <style id="fit-vids-style">
+    .fluid-width-video-wrapper {
+      width: 100%;
+      position: relative;
+      padding: 0;
+    }
+    
+    .fluid-width-video-wrapper iframe,
+    .fluid-width-video-wrapper object,
+    .fluid-width-video-wrapper embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <link rel="stylesheet" href="stylesheet/frank.css">
+  <style type="text/css">
+    .react-spinner {
+      position: relative;
+      width: 32px;
+      height: 32px;
+      top: 50%;
+      left: 50%
+    }
+    
+    .react-spinner_bar {
+      -webkit-animation: react-spinner_spin 1.2s linear infinite;
+      animation: react-spinner_spin 1.2s linear infinite;
+      border-radius: 5px;
+      background-color: #fff;
+      position: absolute;
+      width: 20%;
+      height: 7.8%;
+      top: -3.9%;
+      left: -10%
+    }
+    
+    @keyframes react-spinner_spin {
+      0% {
+        opacity: 1
+      }
+      to {
+        opacity: .15
+      }
+    }
+    
+    @-webkit-keyframes react-spinner_spin {
+      0% {
+        opacity: 1
+      }
+      to {
+        opacity: .15
+      }
+    }
+  </style>
+  <script>
+    var tvt = tvt || {};
+    tvt.captureVariables = function(a) {
+      for (var b = new Date, c = {}, d = Object.keys(a || {}), e = 0, f; f = d[e]; e++)
+        if (a.hasOwnProperty(f) &&
+          "undefined" != typeof a[f]) try {
+          var g = [];
+          c[f] = JSON.stringify(a[f], function(a, b) {
+            try {
+              if ("function" !== typeof b) {
+                if ("object" === typeof b && null !== b) {
+                  if (b instanceof HTMLElement || b instanceof Node || -1 != g.indexOf(b)) return;
+                  g.push(b)
+                }
+                return b
+              }
+            } catch (c) {}
+          })
+        } catch (l) {}
+      a = document.createEvent("CustomEvent");
+      a.initCustomEvent("TvtRetrievedVariablesEvent", !0, !0, {
+        variables: c,
+        date: b
+      });
+      window.dispatchEvent(a)
+    };
+    window.setTimeout(function() {
+      tvt.captureVariables({
+        'dataLayer': window['dataLayer']
+      })
+    }, 2000);
+  </script>
+</head>
+
+<body class="writingindex">
+  <link href="/stylesheet/print.css" rel="stylesheet">
+  <div id="main"><%- markup -%></div>
+
+  <script async src="/js/bundle.js"></script>
+  <script async src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+</body>
+
+</html>

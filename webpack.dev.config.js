@@ -2,10 +2,10 @@ const webpack = require('webpack');
 const path = require('path');
 
 const CLIENT_DIR = path.resolve(__dirname, 'src');
-const DIST_DIR = path.resolve(__dirname, 'public');
+const DIST_DIR = path.resolve(__dirname, 'src', 'static', 'js');
 
 const config = {
-  entry: CLIENT_DIR + '/Main.jsx',
+  entry: CLIENT_DIR + '/client.js',
   output: {
     path: DIST_DIR,
     publicPath: '/js/',
