@@ -1,25 +1,24 @@
 {
-    "env": {
-        "browser": true,
-        "commonjs": true,
-        "es6": true,
-        "node": true
-    },
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "sourceType": "module"
-    },
+    "extends": "airbnb",
+    "plugins": [
+      "react"
+    ],
     "rules": {
-        "no-const-assign": "warn",
-        "no-this-before-super": "warn",
-        "no-undef": "warn",
-        "no-unreachable": "warn",
-        "no-unused-vars": "warn",
-        "constructor-super": "warn",
-        "valid-typeof": "warn",
-        "indent": ["error", 4]
+      "prefer-arrow-callback": 0,
+      "react/prefer-stateless-function": 0,
+      "no-console": 0,
+      "prefer-template": 0,
+      "no-mixed-operators": "off",
+      "no-case-declarations": "off"
     },
-    "extends": "airbnb"
+    "env": {
+      "browser": true,
+      "es6": true,
+      "commonjs": true
+    },
+    "settings": {
+        "import/resolver": {
+            "webpack": { "config": "webpack.dev.config.js" }
+        }
+    }
 }
