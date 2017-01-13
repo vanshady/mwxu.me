@@ -1,1 +1,1 @@
-web: npm run serve
+web: $(npm bin)/babel-node server.js
