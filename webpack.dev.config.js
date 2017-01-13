@@ -2,12 +2,13 @@ const webpack = require('webpack');
 const path = require('path');
 
 const CLIENT_DIR = path.resolve(__dirname, 'src');
-const DIST_DIR = path.resolve(__dirname, 'public/js');
+const DIST_DIR = path.resolve(__dirname, 'public');
 
 const config = {
   entry: CLIENT_DIR + '/Main.jsx',
   output: {
     path: DIST_DIR,
+    publicPath: '/js/',
     filename: 'bundle.js',
   },
   debug: true,
