@@ -1,14 +1,15 @@
-const React = require('react');
-const Item = require('./Item.jsx');
-const Featured = require('./Featured.jsx');
-const list = require('./portfolio.json');
+import React from 'react';
+import Item from './Item.jsx';
+import Featured from './Featured.jsx';
+import list from './portfolio.json';
 
-const Projects = React.createClass({
-    componentDidMount() {
-        this.props.activateProjectsTab();
-    },
-    render() {
-        return (
+class Projects extends React.Component {
+  componentDidMount() {
+    this.props.activateProjectsTab();
+  }
+
+  render() {
+    return (
       <div className="writingwrapper">
         <Featured />
 
@@ -18,7 +19,11 @@ const Projects = React.createClass({
         </section>
       </div>
     );
-    },
-});
+  }
+}
+
+Projects.propTypes = {
+  activateProjectsTab: React.PropTypes.func,
+};
 
 module.exports = Projects;

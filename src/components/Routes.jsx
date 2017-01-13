@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, IndexRoute, Redirect } from 'react-router';
 
-const Base = require('./Base.jsx');
-const Index = require('./Index.jsx');
-const Project = require('./Project.jsx');
-const About = require('./About.jsx');
-const Projects = require('./Projects.jsx');
+import Base from './Base.jsx' ;
+import Index from './Index.jsx' ;
+import Project from './Project.jsx' ;
+import About from './About.jsx' ;
+import Projects from './Projects.jsx' ;
 
 const Routes = (
   <Route path="/" component={Base} >

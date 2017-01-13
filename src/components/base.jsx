@@ -1,23 +1,30 @@
 const React = require('react');
 
-const Base = React.createClass({
+class Base extends React.Component {
+  constructor(props) {
+    super(props);
+    this.activateAboutTab = this.activateAboutTab.bind(this);
+    this.activateHomeTab = this.activateHomeTab.bind(this);
+    this.activateProjectsTab = this.activateProjectsTab.bind(this);
+  }
+
   activateHomeTab() {
     this.homeTab.className = 'active';
     this.aboutTab.className = '';
     this.projectsTab.className = '';
-  },
+  }
 
   activateAboutTab() {
     this.homeTab.className = '';
     this.aboutTab.className = 'active';
     this.projectsTab.className = '';
-  },
+  }
 
   activateProjectsTab() {
     this.homeTab.className = '';
     this.aboutTab.className = '';
     this.projectsTab.className = 'active';
-  },
+  }
 
   render() {
     const childrenWithProps = React.Children.map(this.props.children,
@@ -59,7 +66,11 @@ const Base = React.createClass({
         </footer>
       </div>
     );
-  },
-});
+  }
+}
+
+// Base.propTypes = {
+//   children: React.PropTypes.arrayOf(React.PropTypes.node),
+// };
 
 module.exports = Base;

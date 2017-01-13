@@ -1,16 +1,17 @@
-const React = require('react');
+import React from 'react';
 
-const About = React.createClass({
-    componentDidMount() {
-        this.props.activateAboutTab();
-    },
-    render() {
-        return (
+class About extends React.Component {
+  componentDidMount() {
+    this.props.activateAboutTab();
+  }
+
+  render() {
+    return (
       <div>
         <p> <img src="/img/avatar.jpg" alt="avatar" className="fullimg avatar" /> </p>
         <section className="text">
           <p>
-             I'm Minwei Xu 徐旻威. I was born and grew up in Shanghai, China. Now, I'm a sophomore at Johns Hopkins University.
+            I'm Minwei Xu 徐旻威. I was born and grew up in Shanghai, China. Now, I'm a sophomore at Johns Hopkins University.
              I'm a web developer with experience in front-end and dabbling in data science. I'm passionate about programming and devoted to open-source projects.
              I have Extensive experience with React.js, Redux, react-router, GraphQL, D3.js. Familiar with Java, C/C++, Python, Node.js, iOS Development, and Linux commands.
           </p>
@@ -24,8 +25,7 @@ const About = React.createClass({
           <p>While taking part in competitional programming using Pascal, I self-taught Java, C and C++ in my last of high school.In the summer in 2015, I was lucky to have a chance to be part of a research of data visualization in Shanghai Jiao
             Tong University.</p>
           <p>I used D3.js to visualize the chemical analysis data of <a href="http://wine.minweixu.com">wine</a> and the customer survey data of a <a href="http://hotel.minweixu.com">hotel</a>.
-            <p>This research introduced me web development and development, and I hence studied some basics of JavaScript, HTML/CSS.
-            </p>
+            This research introduced me web development and development, and I hence studied some basics of JavaScript, HTML/CSS.
           </p>
           <figure>
             <img className="fullimg" src="/img/hackathon.jpg" alt="hackathon" />
@@ -58,7 +58,11 @@ const About = React.createClass({
         </section>
       </div>
     );
-    },
-});
+  }
+}
+
+About.propTypes = {
+  activateAboutTab: React.PropTypes.func,
+};
 
 module.exports = About;

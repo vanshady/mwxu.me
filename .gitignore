@@ -2,3 +2,4 @@
 node_modules/
 jsconfig.json
 old/
+npm-debug.log
