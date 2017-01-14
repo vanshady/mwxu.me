@@ -1,26 +1,19 @@
 const React = require('react');
 
 class Base extends React.Component {
-  constructor(props) {
-    super(props);
-    this.activateAboutTab = this.activateAboutTab.bind(this);
-    this.activateHomeTab = this.activateHomeTab.bind(this);
-    this.activateProjectsTab = this.activateProjectsTab.bind(this);
-  }
-
-  activateHomeTab() {
+  activateHomeTab = () => {
     this.homeTab.className = 'active';
     this.aboutTab.className = '';
     this.projectsTab.className = '';
   }
 
-  activateAboutTab() {
+  activateAboutTab = () => {
     this.homeTab.className = '';
     this.aboutTab.className = 'active';
     this.projectsTab.className = '';
   }
 
-  activateProjectsTab() {
+  activateProjectsTab = () => {
     this.homeTab.className = '';
     this.aboutTab.className = '';
     this.projectsTab.className = 'active';

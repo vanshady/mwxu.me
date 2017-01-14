@@ -20,6 +20,11 @@ const config = {
           presets: [
             'react',
             'es2015',
+            'stage-2',
+          ],
+          plugins: [
+            'transform-class-properties',
+            'transform-object-rest-spread',
           ],
         },
       },
